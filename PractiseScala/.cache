@@ -1,0 +1,456 @@
+format version: 5
+output mode:
+1 items
+0 -> multiple
+output directories:
+1 items
+C:\Users\ouchxp\git\practise\PractiseScala\src -> C:\Users\ouchxp\git\practise\PractiseScala\bin
+compile options:
+8 items
+0 -> -javabootclasspath
+1 -> D:\Program Files\Java\jdk1.8.0_25\jre\lib\resources.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\jsse.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\jce.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\charsets.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\jfr.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\access-bridge-64.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\cldrdata.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\dnsns.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\jaccess.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\jfxrt.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\localedata.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\nashorn.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\sunec.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\sunjce_provider.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\sunmscapi.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\sunpkcs11.jar;D:\Program Files\Java\jdk1.8.0_25\jre\lib\ext\zipfs.jar
+2 -> -javaextdirs
+3 ->  
+4 -> -bootclasspath
+5 -> D:\Program Files (x86)\scala\lib\scala-library.jar
+6 -> -encoding
+7 -> UTF-8
+javac options:
+0 items
+compiler version:
+1 items
+0 -> 2.11.4
+compile order:
+1 items
+0 -> Mixed
+name hashing:
+1 items
+0 -> false
+products:
+110 items
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$delayedInit$body.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$Greeting$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$Greeting.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$GreetingActor$$anonfun$receive$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$GreetingActor.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$$anonfun$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$$anonfun$2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$Bool$$anon$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$Bool$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$Bool.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$delayedInit$body.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$$anonfun$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$$anonfun$2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$$anonfun$3.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$$anonfun$4.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$delayedInit$body.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\Evil_v1$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\Evil_v1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\Evil_v2$$anonfun$iomain$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\Evil_v2$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\Evil_v2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v1$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v2$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v3$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v3.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4$$anonfun$iomain$2$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4$$anonfun$iomain$2$$anonfun$apply$2$$anonfun$apply$3.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4$$anonfun$iomain$2$$anonfun$apply$2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4$$anonfun$iomain$2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v3$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v3$SimpleAction.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v3.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4$$anonfun$map$1$$anonfun$apply$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4$$anonfun$map$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4$ChainedAction.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4$SimpleAction.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v1$WorldStateImpl.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v2$WorldStateImpl.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v3$WorldStateImpl.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v3.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v4$WorldStateImpl.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v4.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v1$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v2$$anonfun$getString$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v2$$anonfun$putString$3.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v2$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v3$$anonfun$getString$2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v3$$anonfun$putString$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v3$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v3.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v4$$anonfun$getString$3.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v4$$anonfun$putString$2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v4$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v4.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\WorldState.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$10.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$11.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$12.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$13$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$13$$anonfun$apply$2$$anonfun$apply$3.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$13$$anonfun$apply$2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$13.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$14.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$2.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$3.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$4.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$5$$anonfun$apply$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$5.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$6.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$7.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$8.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$9.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$Computer$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$delayedInit$body.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$SoundCard$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$SysUtil$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$USB$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\A$class.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\A.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\B$class.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\B.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\C$class.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\C.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\D.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\E$$anon$1.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\E$.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\E$delayedInit$body.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\E.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\F.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\G.class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C:\Users\ouchxp\git\practise\PractiseScala\bin\H.class
+binary dependencies:
+13 items
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> D:\Program Files (x86)\scala\lib\akka-actor_2.11-2.3.4.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> D:\Program Files (x86)\scala\lib\scala-library.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> D:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> D:\Program Files (x86)\scala\lib\scala-library.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> D:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> D:\Program Files (x86)\scala\lib\scala-library.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> D:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> D:\Program Files (x86)\scala\lib\scala-library.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> D:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> D:\Program Files (x86)\scala\lib\scala-library.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> D:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> D:\Program Files (x86)\scala\lib\scala-library.jar
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> D:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar
+direct source dependencies:
+0 items
+direct external dependencies:
+0 items
+public inherited source dependencies:
+0 items
+public inherited external dependencies:
+0 items
+member reference internal dependencies:
+0 items
+member reference external dependencies:
+0 items
+inheritance internal dependencies:
+0 items
+inheritance external dependencies:
+0 items
+class names:
+110 items
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> TestActor
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> TestActor$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> TestActor$Greeting
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> TestActor$Greeting$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> TestActor$GreetingActor
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> TestActor$GreetingActor$$anonfun$receive$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> TestActor$delayedInit$body
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> ImplicitConvert
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> ImplicitConvert$
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> ImplicitConvert$$anonfun$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> ImplicitConvert$$anonfun$2
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> ImplicitConvert$Bool
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> ImplicitConvert$Bool$
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> ImplicitConvert$Bool$$anon$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> ImplicitConvert$delayedInit$body
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> TestMergeSort
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> TestMergeSort$
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> TestMergeSort$$anonfun$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> TestMergeSort$$anonfun$2
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> TestMergeSort$$anonfun$3
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> TestMergeSort$$anonfun$4
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> TestMergeSort$delayedInit$body
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> Evil_v1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> Evil_v1$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> Evil_v2
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> Evil_v2$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> Evil_v2$$anonfun$iomain$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v1$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v2
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v2$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v3
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v3$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v4
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v4$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v4$$anonfun$iomain$2
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v4$$anonfun$iomain$2$$anonfun$apply$2
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v4$$anonfun$iomain$2$$anonfun$apply$2$$anonfun$apply$3
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> HelloWorld_v4$$anonfun$iomain$2$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOAction_v3
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOAction_v3$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOAction_v3$SimpleAction
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOAction_v4
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOAction_v4$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOAction_v4$$anonfun$map$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOAction_v4$$anonfun$map$1$$anonfun$apply$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOAction_v4$ChainedAction
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOAction_v4$SimpleAction
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOApplication_v1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOApplication_v1$WorldStateImpl
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOApplication_v2
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOApplication_v2$WorldStateImpl
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOApplication_v3
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOApplication_v3$WorldStateImpl
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOApplication_v4
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> IOApplication_v4$WorldStateImpl
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v1$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v2
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v2$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v2$$anonfun$getString$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v2$$anonfun$putString$3
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v3
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v3$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v3$$anonfun$getString$2
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v3$$anonfun$putString$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v4
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v4$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v4$$anonfun$getString$3
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> RTConsole_v4$$anonfun$putString$2
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> WorldState
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$10
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$11
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$12
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$13
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$13$$anonfun$apply$2
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$13$$anonfun$apply$2$$anonfun$apply$3
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$13$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$14
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$2
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$3
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$4
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$5
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$5$$anonfun$apply$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$6
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$7
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$8
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$$anonfun$9
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$Computer$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$SoundCard$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$SysUtil$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$USB$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> TestOption$delayedInit$body
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> A
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> A$class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> B
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> B$class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> C$class
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> D
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> E
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> E$
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> E$$anon$1
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> E$delayedInit$body
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> F
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> G
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> H
+used names:
+0 items
+product stamps:
+110 items
+C:\Users\ouchxp\git\practise\PractiseScala\bin\A$class.class -> lastModified(1418118842300)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\A.class -> lastModified(1418118842296)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\B$class.class -> lastModified(1418118842304)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\B.class -> lastModified(1418118842302)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\C$class.class -> lastModified(1418118842307)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\C.class -> lastModified(1418118842305)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\D.class -> lastModified(1418118842311)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\E$$anon$1.class -> lastModified(1418118842324)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\E$.class -> lastModified(1418118842318)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\E$delayedInit$body.class -> lastModified(1418118842329)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\E.class -> lastModified(1418118842322)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\Evil_v1$.class -> lastModified(1418118842341)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\Evil_v1.class -> lastModified(1418118842332)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\Evil_v2$$anonfun$iomain$1.class -> lastModified(1418118842352)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\Evil_v2$.class -> lastModified(1418118842347)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\Evil_v2.class -> lastModified(1418118842344)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\F.class -> lastModified(1418118842353)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\G.class -> lastModified(1418118842355)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\H.class -> lastModified(1418118842356)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v1$.class -> lastModified(1418118842360)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v1.class -> lastModified(1418118842358)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v2$.class -> lastModified(1418118842363)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v2.class -> lastModified(1418118842362)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v3$.class -> lastModified(1418118842367)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v3.class -> lastModified(1418118842365)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4$$anonfun$iomain$2$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4.class -> lastModified(1418118842386)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4$$anonfun$iomain$2$$anonfun$apply$2$$anonfun$apply$3.class -> lastModified(1418118842384)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4$$anonfun$iomain$2$$anonfun$apply$2.class -> lastModified(1418118842381)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4$$anonfun$iomain$2.class -> lastModified(1418118842373)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4$.class -> lastModified(1418118842371)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\HelloWorld_v4.class -> lastModified(1418118842369)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$$anonfun$1.class -> lastModified(1418118842469)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$$anonfun$2.class -> lastModified(1418118842471)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$.class -> lastModified(1418118842465)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$Bool$$anon$1.class -> lastModified(1418118842483)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$Bool$.class -> lastModified(1418118842481)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$Bool.class -> lastModified(1418118842478)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert$delayedInit$body.class -> lastModified(1418118842485)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\ImplicitConvert.class -> lastModified(1418118842452)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v3$.class -> lastModified(1418118842388)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v3$SimpleAction.class -> lastModified(1418118842403)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v3.class -> lastModified(1418118842390)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4$$anonfun$map$1$$anonfun$apply$1.class -> lastModified(1418118842422)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4$$anonfun$map$1.class -> lastModified(1418118842419)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4$.class -> lastModified(1418118842416)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4$ChainedAction.class -> lastModified(1418118842426)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4$SimpleAction.class -> lastModified(1418118842428)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOAction_v4.class -> lastModified(1418118842414)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v1$WorldStateImpl.class -> lastModified(1418118842434)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v1.class -> lastModified(1418118842431)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v2$WorldStateImpl.class -> lastModified(1418118842440)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v2.class -> lastModified(1418118842437)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v3$WorldStateImpl.class -> lastModified(1418118842444)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v3.class -> lastModified(1418118842442)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v4$WorldStateImpl.class -> lastModified(1418118842449)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\IOApplication_v4.class -> lastModified(1418118842446)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v1$.class -> lastModified(1418118842489)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v1.class -> lastModified(1418118842486)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v2$$anonfun$getString$1.class -> lastModified(1418118842499)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v2$$anonfun$putString$3.class -> lastModified(1418118842502)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v2$.class -> lastModified(1418118842497)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v2.class -> lastModified(1418118842495)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v3$$anonfun$getString$2.class -> lastModified(1418118842509)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v3$$anonfun$putString$1.class -> lastModified(1418118842511)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v3$.class -> lastModified(1418118842508)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v3.class -> lastModified(1418118842504)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v4$$anonfun$getString$3.class -> lastModified(1418118842516)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v4$$anonfun$putString$2.class -> lastModified(1418118842518)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v4$.class -> lastModified(1418118842515)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\RTConsole_v4.class -> lastModified(1418118842513)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$.class -> lastModified(1418118842526)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$delayedInit$body.class -> lastModified(1418118842548)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$Greeting$.class -> lastModified(1418118842531)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$Greeting.class -> lastModified(1418118842529)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$GreetingActor$$anonfun$receive$1.class -> lastModified(1418118842546)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor$GreetingActor.class -> lastModified(1418118842538)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestActor.class -> lastModified(1418118842521)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$$anonfun$1.class -> lastModified(1418118842573)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$$anonfun$2.class -> lastModified(1418118842578)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$$anonfun$3.class -> lastModified(1418118842580)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$$anonfun$4.class -> lastModified(1418118842583)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$.class -> lastModified(1418118842568)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort$delayedInit$body.class -> lastModified(1418118842585)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestMergeSort.class -> lastModified(1418118842554)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$1.class -> lastModified(1418118842599)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$10.class -> lastModified(1418118842601)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$11.class -> lastModified(1418118842604)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$12.class -> lastModified(1418118842606)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$13$$anonfun$apply$2$$anonfun$apply$3$$anonfun$apply$4.class -> lastModified(1418118842615)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$13$$anonfun$apply$2$$anonfun$apply$3.class -> lastModified(1418118842611)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$13$$anonfun$apply$2.class -> lastModified(1418118842609)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$13.class -> lastModified(1418118842608)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$14.class -> lastModified(1418118842617)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$2.class -> lastModified(1418118842619)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$3.class -> lastModified(1418118842621)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$4.class -> lastModified(1418118842626)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$5$$anonfun$apply$1.class -> lastModified(1418118842634)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$5.class -> lastModified(1418118842629)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$6.class -> lastModified(1418118842637)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$7.class -> lastModified(1418118842639)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$8.class -> lastModified(1418118842642)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$$anonfun$9.class -> lastModified(1418118842644)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$.class -> lastModified(1418118842594)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$Computer$.class -> lastModified(1418118842646)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$delayedInit$body.class -> lastModified(1418118842654)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$SoundCard$.class -> lastModified(1418118842648)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$SysUtil$.class -> lastModified(1418118842650)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption$USB$.class -> lastModified(1418118842652)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\TestOption.class -> lastModified(1418118842588)
+C:\Users\ouchxp\git\practise\PractiseScala\bin\WorldState.class -> lastModified(1418118842656)
+source stamps:
+6 items
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> hash(438ae129b2464ff5a2eaba4bde86206d6ac29ab5)
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> hash(38e36b1c4f85db3645e8585d19425cfc55e2c126)
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> hash(114830887b7204ae3a7b313638b86b0e5a7c5972)
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> hash(528582509aeab9499f8892047dd3296d110157c1)
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> hash(b78f4c15c34fbbe81afe4db88aaef0cd68ac58b0)
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> hash(3a2634a3a66dbe1faed1b0e06b6853db504eea35)
+binary stamps:
+3 items
+D:\Program Files (x86)\scala\lib\akka-actor_2.11-2.3.4.jar -> lastModified(1414066164000)
+D:\Program Files (x86)\scala\lib\scala-library.jar -> lastModified(1414066164000)
+D:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar -> lastModified(1414529805366)
+class names:
+3 items
+D:\Program Files (x86)\scala\lib\akka-actor_2.11-2.3.4.jar -> akka.actor.Actor
+D:\Program Files (x86)\scala\lib\scala-library.jar -> scala.DelayedInit
+D:\Program Files\Java\jdk1.8.0_25\jre\lib\rt.jar -> java.lang.Object
+internal apis:
+6 items
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHAEslJIAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAJVGVzdEFjdG9ydXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAnQAEHNjYWxhLmRlcHJlY2F0ZWR0ABpzY2FsYS5kZXByZWNhdGVkT3ZlcnJpZGluZ3NyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDHhZaBKlSi/3wIAAUwAB3ZhbHVlJDFxAH4AMXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AMABwc3EAfgA1c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4AOXNxAH4AMABwc3EAfgA1dXEAfgAQAAAAAHNxAH4AMABwc3EAfgA1dXEAfgAQAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgAWcQB+ACB1cQB+ACEAAAABc3IAFHhzYnRpLmFwaS5Bbm5vdGF0aW9u3g6BovZcCrICAAJbAAlhcmd1bWVudHN0AB9bTHhzYnRpL2FwaS9Bbm5vdGF0aW9uQXJndW1lbnQ7TAAEYmFzZXEAfgBGeHB1cgAfW0x4c2J0aS5hcGkuQW5ub3RhdGlvbkFyZ3VtZW50O1Gdpo84JQ94AgAAeHAAAAABc3IAHHhzYnRpLmFwaS5Bbm5vdGF0aW9uQXJndW1lbnTWRbHYAxsXfAIAAkwABG5hbWVxAH4AHEwABXZhbHVlcQB+ABx4cHQAAHQAKigibWFpbiBzaG91bGQgbm90IGJlIG92ZXJyaWRkZW4iLCIyLjExLjAiKXNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADh0ABRkZXByZWNhdGVkT3ZlcnJpZGluZ3NyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AOHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AYHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNxAH4AU3QABFVuaXRxAH4AWXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAcTAADdHBlcQB+AEZ4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+ACl0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AFRbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+ADhzcQB+AFN0AAVBcnJheXEAfgBZdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AFN0AAZTdHJpbmdzcQB+AFdzcQB+AFp1cQB+AF0AAAADc3EAfgBfdAAEamF2YXNxAH4AX3QABGxhbmdxAH4AZHNxAH4AMABwc3EAfgA1dXEAfgB9AAAABHNxAH4AU3QAA0FwcHEAfgBZc3EAfgBTdAALRGVsYXllZEluaXRxAH4AWXNxAH4AU3QABk9iamVjdHEAfgCBc3EAfgBTdAADQW55cQB+AFl1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi54NnJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAuQzpcVXNlcnNcb3VjaHhwXGdpdFxwcmFjdGlzZVxQcmFjdGlzZVNjYWxhXGJpbnQALkM6XFVzZXJzXG91Y2h4cFxnaXRccHJhY3Rpc2VcUHJhY3Rpc2VTY2FsYVxzcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFEOK4SmyRk/1ouq6S96GIG1qwpq1
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCzPdp2AHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAPSW1wbGljaXRDb252ZXJ0dXIAGltMeHNidGkuYXBpLlR5cGVQYXJhbWV0ZXI72W0mDyid8rYCAAB4cAAAAAB+cgAYeHNidGkuYXBpLkRlZmluaXRpb25UeXBlAAAAAAAAAAASAAB4cgAOamF2YS5sYW5nLkVudW0AAAAAAAAAABIAAHhwdAAGTW9kdWxldXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAnQAEHNjYWxhLmRlcHJlY2F0ZWR0ABpzY2FsYS5kZXByZWNhdGVkT3ZlcnJpZGluZ3NyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDHhZaBKlSi/3wIAAUwAB3ZhbHVlJDFxAH4AMXhwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4AMABwc3EAfgA1c3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4AOXNxAH4AMABwc3EAfgA1dXEAfgAQAAAAAHNxAH4AMABwc3EAfgA1dXEAfgAQAAAAAXNyAA14c2J0aS5hcGkuRGVmUr6f4ny0NmkCAAJMAApyZXR1cm5UeXBldAAQTHhzYnRpL2FwaS9UeXBlO1sAD3ZhbHVlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1BhcmFtZXRlckxpc3Q7eHEAfgAWcQB+ACB1cQB+ACEAAAABc3IAFHhzYnRpLmFwaS5Bbm5vdGF0aW9u3g6BovZcCrICAAJbAAlhcmd1bWVudHN0AB9bTHhzYnRpL2FwaS9Bbm5vdGF0aW9uQXJndW1lbnQ7TAAEYmFzZXEAfgBGeHB1cgAfW0x4c2J0aS5hcGkuQW5ub3RhdGlvbkFyZ3VtZW50O1Gdpo84JQ94AgAAeHAAAAABc3IAHHhzYnRpLmFwaS5Bbm5vdGF0aW9uQXJndW1lbnTWRbHYAxsXfAIAAkwABG5hbWVxAH4AHEwABXZhbHVlcQB+ABx4cHQAAHQAKigibWFpbiBzaG91bGQgbm90IGJlIG92ZXJyaWRkZW4iLCIyLjExLjAiKXNyABR4c2J0aS5hcGkuUHJvamVjdGlvbvPSjVTpRaQtAgACTAACaWRxAH4AHEwABnByZWZpeHQAFkx4c2J0aS9hcGkvU2ltcGxlVHlwZTt4cQB+ADh0ABRkZXByZWNhdGVkT3ZlcnJpZGluZ3NyABN4c2J0aS5hcGkuU2luZ2xldG9u/Kdf+M9W5EYCAAFMAARwYXRodAAQTHhzYnRpL2FwaS9QYXRoO3hxAH4AOHNyAA54c2J0aS5hcGkuUGF0aJs9XAjOpSeEAgABWwAKY29tcG9uZW50c3QAGltMeHNidGkvYXBpL1BhdGhDb21wb25lbnQ7eHB1cgAaW0x4c2J0aS5hcGkuUGF0aENvbXBvbmVudDtD2gl0LWcWdAIAAHhwAAAAAnNyAAx4c2J0aS5hcGkuSWSYMmyLN1PEQAIAAUwAAmlkcQB+ABx4cgAXeHNidGkuYXBpLlBhdGhDb21wb25lbnRfmiJbLoafvAIAAHhwdAAFc2NhbGFzcgAOeHNidGkuYXBpLlRoaXPbCe2mzFpAXAIAAHhxAH4AYHNxAH4AIwB0AARtYWludXEAfgAmAAAAAHNxAH4AU3QABFVuaXRxAH4AWXVyABpbTHhzYnRpLmFwaS5QYXJhbWV0ZXJMaXN0O/XTOh3ys3DuAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAcTAADdHBlcQB+AEZ4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+ACl0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AFRbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+ADhzcQB+AFN0AAVBcnJheXEAfgBZdXIAEVtMeHNidGkuYXBpLlR5cGU7dP+lWnv56UECAAB4cAAAAAFzcQB+AFN0AAZTdHJpbmdzcQB+AFdzcQB+AFp1cQB+AF0AAAADc3EAfgBfdAAEamF2YXNxAH4AX3QABGxhbmdxAH4AZHNxAH4AMABwc3EAfgA1dXEAfgB9AAAABHNxAH4AU3QAA0FwcHEAfgBZc3EAfgBTdAALRGVsYXllZEluaXRxAH4AWXNxAH4AU3QABk9iamVjdHEAfgCBc3EAfgBTdAADQW55cQB+AFl1cgAUW0x4c2J0aS5hcGkuUGFja2FnZTtbExk3cKcnoQIAAHhwAAAAAHNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi54NnJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5cQB+ABxMAA9zb3VyY2VEaXJlY3RvcnlxAH4AHHhwdAAuQzpcVXNlcnNcb3VjaHhwXGdpdFxwcmFjdGlzZVxQcmFjdGlzZVNjYWxhXGJpbnQALkM6XFVzZXJzXG91Y2h4cFxnaXRccHJhY3Rpc2VcUHJhY3Rpc2VTY2FsYVxzcmN1cgACW0Ks8xf4BghU4AIAAHhwAAAAFDjjaxxPhds2RehYXRlCXPxV4sEm
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHBeICNyAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAANVGVzdE1lcmdlU29ydHVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAJ0ABBzY2FsYS5kZXByZWNhdGVkdAAac2NhbGEuZGVwcmVjYXRlZE92ZXJyaWRpbmdzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQx4WWgSpUov98CAAFMAAd2YWx1ZSQxcQB+ADF4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+ADAAcHNxAH4ANXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADlzcQB+ADAAcHNxAH4ANXVxAH4AEAAAAABzcQB+ADAAcHNxAH4ANXVxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAXNyABR4c2J0aS5hcGkuQW5ub3RhdGlvbt4OgaL2XAqyAgACWwAJYXJndW1lbnRzdAAfW0x4c2J0aS9hcGkvQW5ub3RhdGlvbkFyZ3VtZW50O0wABGJhc2VxAH4ARnhwdXIAH1tMeHNidGkuYXBpLkFubm90YXRpb25Bcmd1bWVudDtRnaaPOCUPeAIAAHhwAAAAAXNyABx4c2J0aS5hcGkuQW5ub3RhdGlvbkFyZ3VtZW501kWx2AMbF3wCAAJMAARuYW1lcQB+ABxMAAV2YWx1ZXEAfgAceHB0AAB0ACooIm1haW4gc2hvdWxkIG5vdCBiZSBvdmVycmlkZGVuIiwiMi4xMS4wIilzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA4dAAUZGVwcmVjYXRlZE92ZXJyaWRpbmdzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADhzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AGBzcQB+ACMAdAAEbWFpbnVxAH4AJgAAAABzcQB+AFN0AARVbml0cQB+AFl1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgBGeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBUWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgA4c3EAfgBTdAAFQXJyYXlxAH4AWXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBTdAAGU3RyaW5nc3EAfgBXc3EAfgBadXEAfgBdAAAAA3NxAH4AX3QABGphdmFzcQB+AF90AARsYW5ncQB+AGRzcQB+ADAAcHNxAH4ANXVxAH4AfQAAAARzcQB+AFN0AANBcHBxAH4AWXNxAH4AU3QAC0RlbGF5ZWRJbml0cQB+AFlzcQB+AFN0AAZPYmplY3RxAH4AgXNxAH4AU3QAA0FueXEAfgBZdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUoueDZydXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQALkM6XFVzZXJzXG91Y2h4cFxnaXRccHJhY3Rpc2VcUHJhY3Rpc2VTY2FsYVxiaW50AC5DOlxVc2Vyc1xvdWNoeHBcZ2l0XHByYWN0aXNlXFByYWN0aXNlU2NhbGFcc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABQRSDCIe3IErjp7MTY4uGsOWnxZcg==
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHADB3MnAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAABNzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAJdAAKV29ybGRTdGF0ZXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABVRyYWl0dXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDHhZaBKlSi/3wIAAUwAB3ZhbHVlJDFxAH4AL3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4ALgBwc3EAfgAzc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4AN3NxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXIAEVtMeHN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
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHB5JqgCAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAFzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHAAdAAKVGVzdE9wdGlvbnVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABk1vZHVsZXVyABNbTGphdmEubGFuZy5TdHJpbmc7rdJW5+kde0cCAAB4cAAAAAJ0ABBzY2FsYS5kZXByZWNhdGVkdAAac2NhbGEuZGVwcmVjYXRlZE92ZXJyaWRpbmdzcgATeHNidGkuU2FmZUxhenkkSW1wbDuRTxH0RUzJAgADWgAIYml0bWFwJDBMAAJfdHQAEkxqYXZhL2xhbmcvT2JqZWN0O0wABGV2YWx0ABFMc2NhbGEvRnVuY3Rpb24wO3hyABZ4c2J0aS5hcGkuQWJzdHJhY3RMYXp503e1AV+756ACAAB4cABwc3IAIHhzYnRpLlNhZmVMYXp5JCRhbm9uZnVuJHN0cmljdCQx4WWgSpUov98CAAFMAAd2YWx1ZSQxcQB+ADF4cHNyABN4c2J0aS5hcGkuRW1wdHlUeXBlvP2eRkk7iSQCAAB4cgAUeHNidGkuYXBpLlNpbXBsZVR5cGVyeGKIISO/QAIAAHhyAA54c2J0aS5hcGkuVHlwZT9q2SEWSarKAgAAeHBzcQB+ADAAcHNxAH4ANXNyABN4c2J0aS5hcGkuU3RydWN0dXJlqar5gJNv2AACAANMAAhkZWNsYXJlZHEAfgAVTAAJaW5oZXJpdGVkcQB+ABVMAAdwYXJlbnRzcQB+ABV4cQB+ADlzcQB+ADAAcHNxAH4ANXVxAH4AEAAAAABzcQB+ADAAcHNxAH4ANXVxAH4AEAAAAAFzcgANeHNidGkuYXBpLkRlZlK+n+J8tDZpAgACTAAKcmV0dXJuVHlwZXQAEEx4c2J0aS9hcGkvVHlwZTtbAA92YWx1ZVBhcmFtZXRlcnN0ABpbTHhzYnRpL2FwaS9QYXJhbWV0ZXJMaXN0O3hxAH4AFnEAfgAgdXEAfgAhAAAAAXNyABR4c2J0aS5hcGkuQW5ub3RhdGlvbt4OgaL2XAqyAgACWwAJYXJndW1lbnRzdAAfW0x4c2J0aS9hcGkvQW5ub3RhdGlvbkFyZ3VtZW50O0wABGJhc2VxAH4ARnhwdXIAH1tMeHNidGkuYXBpLkFubm90YXRpb25Bcmd1bWVudDtRnaaPOCUPeAIAAHhwAAAAAXNyABx4c2J0aS5hcGkuQW5ub3RhdGlvbkFyZ3VtZW501kWx2AMbF3wCAAJMAARuYW1lcQB+ABxMAAV2YWx1ZXEAfgAceHB0AAB0ACooIm1haW4gc2hvdWxkIG5vdCBiZSBvdmVycmlkZGVuIiwiMi4xMS4wIilzcgAUeHNidGkuYXBpLlByb2plY3Rpb27z0o1U6UWkLQIAAkwAAmlkcQB+ABxMAAZwcmVmaXh0ABZMeHNidGkvYXBpL1NpbXBsZVR5cGU7eHEAfgA4dAAUZGVwcmVjYXRlZE92ZXJyaWRpbmdzcgATeHNidGkuYXBpLlNpbmdsZXRvbvynX/jPVuRGAgABTAAEcGF0aHQAEEx4c2J0aS9hcGkvUGF0aDt4cQB+ADhzcgAOeHNidGkuYXBpLlBhdGibPVwIzqUnhAIAAVsACmNvbXBvbmVudHN0ABpbTHhzYnRpL2FwaS9QYXRoQ29tcG9uZW50O3hwdXIAGltMeHNidGkuYXBpLlBhdGhDb21wb25lbnQ7Q9oJdC1nFnQCAAB4cAAAAAJzcgAMeHNidGkuYXBpLklkmDJsizdTxEACAAFMAAJpZHEAfgAceHIAF3hzYnRpLmFwaS5QYXRoQ29tcG9uZW50X5oiWy6Gn7wCAAB4cHQABXNjYWxhc3IADnhzYnRpLmFwaS5UaGlz2wntpsxaQFwCAAB4cQB+AGBzcQB+ACMAdAAEbWFpbnVxAH4AJgAAAABzcQB+AFN0AARVbml0cQB+AFl1cgAaW0x4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdDv10zod8rNw7gIAAHhwAAAAAXNyABd4c2J0aS5hcGkuUGFyYW1ldGVyTGlzdNbFvBxkSXTjAgACWgAKaXNJbXBsaWNpdFsACnBhcmFtZXRlcnN0ABxbTHhzYnRpL2FwaS9NZXRob2RQYXJhbWV0ZXI7eHAAdXIAHFtMeHNidGkuYXBpLk1ldGhvZFBhcmFtZXRlcjvPuMVdpd21bQIAAHhwAAAAAXNyABl4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyH0WuF9NJsOoCAARaAApoYXNEZWZhdWx0TAAIbW9kaWZpZXJ0AB1MeHNidGkvYXBpL1BhcmFtZXRlck1vZGlmaWVyO0wABG5hbWVxAH4AHEwAA3RwZXEAfgBGeHAAfnIAG3hzYnRpLmFwaS5QYXJhbWV0ZXJNb2RpZmllcgAAAAAAAAAAEgAAeHEAfgApdAAFUGxhaW50AARhcmdzc3IAF3hzYnRpLmFwaS5QYXJhbWV0ZXJpemVkFmzuaQPJu38CAAJMAAhiYXNlVHlwZXEAfgBUWwANdHlwZUFyZ3VtZW50c3QAEVtMeHNidGkvYXBpL1R5cGU7eHEAfgA4c3EAfgBTdAAFQXJyYXlxAH4AWXVyABFbTHhzYnRpLmFwaS5UeXBlO3T/pVp7+elBAgAAeHAAAAABc3EAfgBTdAAGU3RyaW5nc3EAfgBXc3EAfgBadXEAfgBdAAAAA3NxAH4AX3QABGphdmFzcQB+AF90AARsYW5ncQB+AGRzcQB+ADAAcHNxAH4ANXVxAH4AfQAAAARzcQB+AFN0AANBcHBxAH4AWXNxAH4AU3QAC0RlbGF5ZWRJbml0cQB+AFlzcQB+AFN0AAZPYmplY3RxAH4AgXNxAH4AU3QAA0FueXEAfgBZdXIAFFtMeHNidGkuYXBpLlBhY2thZ2U7WxMZN3CnJ6ECAAB4cAAAAABzcgAVeHNidGkuYXBpLkNvbXBpbGF0aW9u7frgw2rooEICAAJKAAlzdGFydFRpbWVbAAdvdXRwdXRzdAAaW0x4c2J0aS9hcGkvT3V0cHV0U2V0dGluZzt4cAAAAUoueDZydXIAGltMeHNidGkuYXBpLk91dHB1dFNldHRpbmc7f2rC86eHpUICAAB4cAAAAAFzcgAXeHNidGkuYXBpLk91dHB1dFNldHRpbmd62ZpHdPsdewIAAkwAD291dHB1dERpcmVjdG9yeXEAfgAcTAAPc291cmNlRGlyZWN0b3J5cQB+ABx4cHQALkM6XFVzZXJzXG91Y2h4cFxnaXRccHJhY3Rpc2VcUHJhY3Rpc2VTY2FsYVxiaW50AC5DOlxVc2Vyc1xvdWNoeHBcZ2l0XHByYWN0aXNlXFByYWN0aXNlU2NhbGFcc3JjdXIAAltCrPMX+AYIVOACAAB4cAAAABS3j0wVw0+76Br+TbiKrvDNaKxYsA==
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> 
+rO0ABXNyABB4c2J0aS5hcGkuU291cmNlFlpwRASfbtoCAAZJAAdhcGlIYXNoWgAIaGFzTWFjcm9MABhfaW50ZXJuYWxPbmx5X25hbWVIYXNoZXN0ACRMeHNidGkvYXBpL19pbnRlcm5hbE9ubHlfTmFtZUhhc2hlcztMAANhcGl0ABVMeHNidGkvYXBpL1NvdXJjZUFQSTtMAAtjb21waWxhdGlvbnQAF0x4c2J0aS9hcGkvQ29tcGlsYXRpb247WwAEaGFzaHQAAltCeHCiwxgPAHNyACJ4c2J0aS5hcGkuX2ludGVybmFsT25seV9OYW1lSGFzaGVzVNq+mfrU7EwCAAJbAA9pbXBsaWNpdE1lbWJlcnN0ACNbTHhzYnRpL2FwaS9faW50ZXJuYWxPbmx5X05hbWVIYXNoO1sADnJlZ3VsYXJNZW1iZXJzcQB+AAd4cHVyACNbTHhzYnRpLmFwaS5faW50ZXJuYWxPbmx5X05hbWVIYXNoO0lagLbdlov0AgAAeHAAAAAAdXEAfgAJAAAAAHNyABN4c2J0aS5hcGkuU291cmNlQVBJuV6n+SkjOKQCAAJbAAtkZWZpbml0aW9uc3QAF1tMeHNidGkvYXBpL0RlZmluaXRpb247WwAIcGFja2FnZXN0ABRbTHhzYnRpL2FwaS9QYWNrYWdlO3hwdXIAF1tMeHNidGkuYXBpLkRlZmluaXRpb247iMlc57TjXg4CAAB4cAAAAAlzcgATeHNidGkuYXBpLkNsYXNzTGlrZYM0HKHfsJdsAgAETAAOZGVmaW5pdGlvblR5cGV0ABpMeHNidGkvYXBpL0RlZmluaXRpb25UeXBlO1sAEHNhdmVkQW5ub3RhdGlvbnN0ABNbTGphdmEvbGFuZy9TdHJpbmc7TAAIc2VsZlR5cGV0ABBMeHNidGkvYXBpL0xhenk7TAAJc3RydWN0dXJlcQB+ABV4cgAheHNidGkuYXBpLlBhcmFtZXRlcml6ZWREZWZpbml0aW9u+RFusdVQPOICAAFbAA50eXBlUGFyYW1ldGVyc3QAGltMeHNidGkvYXBpL1R5cGVQYXJhbWV0ZXI7eHIAFHhzYnRpLmFwaS5EZWZpbml0aW9uhyob6HFC40YCAARMAAZhY2Nlc3N0ABJMeHNidGkvYXBpL0FjY2VzcztbAAthbm5vdGF0aW9uc3QAF1tMeHNidGkvYXBpL0Fubm90YXRpb247TAAJbW9kaWZpZXJzdAAVTHhzYnRpL2FwaS9Nb2RpZmllcnM7TAAEbmFtZXQAEkxqYXZhL2xhbmcvU3RyaW5nO3hwc3IAEHhzYnRpLmFwaS5QdWJsaWO6WD2ubC1gQgIAAHhyABB4c2J0aS5hcGkuQWNjZXNz3WKa+B1jMUgCAAB4cHVyABdbTHhzYnRpLmFwaS5Bbm5vdGF0aW9uO+uX6xkQ9o1IAgAAeHAAAAAAc3IAE3hzYnRpLmFwaS5Nb2RpZmllcnPHERMhaZzcJAIAAUIABWZsYWdzeHABdAABQXVyABpbTHhzYnRpLmFwaS5UeXBlUGFyYW1ldGVyO9ltJg8onfK2AgAAeHAAAAAAfnIAGHhzYnRpLmFwaS5EZWZpbml0aW9uVHlwZQAAAAAAAAAAEgAAeHIADmphdmEubGFuZy5FbnVtAAAAAAAAAAASAAB4cHQABVRyYWl0dXIAE1tMamF2YS5sYW5nLlN0cmluZzut0lbn6R17RwIAAHhwAAAAAHNyABN4c2J0aS5TYWZlTGF6eSRJbXBsO5FPEfRFTMkCAANaAAhiaXRtYXAkMEwAAl90dAASTGphdmEvbGFuZy9PYmplY3Q7TAAEZXZhbHQAEUxzY2FsYS9GdW5jdGlvbjA7eHIAFnhzYnRpLmFwaS5BYnN0cmFjdExhennTd7UBX7vnoAIAAHhwAHBzcgAgeHNidGkuU2FmZUxhenkkJGFub25mdW4kc3RyaWN0JDHhZaBKlSi/3wIAAUwAB3ZhbHVlJDFxAH4AL3hwc3IAE3hzYnRpLmFwaS5FbXB0eVR5cGW8/Z5GSTuJJAIAAHhyABR4c2J0aS5hcGkuU2ltcGxlVHlwZXJ4YoghI79AAgAAeHIADnhzYnRpLmFwaS5UeXBlP2rZIRZJqsoCAAB4cHNxAH4ALgBwc3EAfgAzc3IAE3hzYnRpLmFwaS5TdHJ1Y3R1cmWpqvmAk2/YAAIAA0wACGRlY2xhcmVkcQB+ABVMAAlpbmhlcml0ZWRxAH4AFUwAB3BhcmVudHNxAH4AFXhxAH4AN3NxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXEAfgAQAAAAAHNxAH4ALgBwc3EAfgAzdXIAEVtMeHNidGkuYXBpLlR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hbWV0ZXJMaXN01sW8HGRJdOMCAAJaAAppc0ltcGxpY2l0WwAKcGFyYW1ldGVyc3QAHFtMeHNidGkvYXBpL01ldGhvZFBhcmFtZXRlcjt4cAB1cgAcW0x4c2J0aS5hcGkuTWV0aG9kUGFyYW1ldGVyO8+4xV2l3bVtAgAAeHAAAAABc3IAGXhzYnRpLmFwaS5NZXRob2RQYXJhbWV0ZXIfRa4X00mw6gIABFoACmhhc0RlZmF1bHRMAAhtb2RpZmllcnQAHUx4c2J0aS9hcGkvUGFyYW1ldGVyTW9kaWZpZXI7TAAEbmFtZXEAfgAcTAADdHBlcQB+AYh4cAB+cgAbeHNidGkuYXBpLlBhcmFtZXRlck1vZGlmaWVyAAAAAAAAAAASAAB4cQB+ACl0AAVQbGFpbnQABGFyZ3NzcgAXeHNidGkuYXBpLlBhcmFtZXRlcml6ZWQWbO5pA8m7fwIAAkwACGJhc2VUeXBlcQB+AEhbAA10eXBlQXJndW1lbnRzdAARW0x4c2J0aS9hcGkvVHlwZTt4cQB+ADZzcQB+AEd0AAVBcnJheXEAfgGXdXEAfgBFAAAAAXNxAH4AR3QABlN0cmluZ3NxAH4AS3NxAH4ATnVxAH4AUQAAAANzcQB+AFNxAH4AVnNxAH4AU3EAfgBYcQB+AFpzcQB+AC4AcHNxAH4AM3VxAH4ARQAAAARzcQB+AEd0AANBcHBxAH4Bl3NxAH4AR3QAC0RlbGF5ZWRJbml0cQB+AZdzcQB+AEdxAH4ASnEAfgG2c3EAfgBHcQB+AFxxAH4Bl3VyABRbTHhzYnRpLmFwaS5QYWNrYWdlO1sTGTdwpyehAgAAeHAAAAAAc3IAFXhzYnRpLmFwaS5Db21waWxhdGlvbu364MNq6KBCAgACSgAJc3RhcnRUaW1lWwAHb3V0cHV0c3QAGltMeHNidGkvYXBpL091dHB1dFNldHRpbmc7eHAAAAFKLng2cnVyABpbTHhzYnRpLmFwaS5PdXRwdXRTZXR0aW5nO39qwvOnh6VCAgAAeHAAAAABc3IAF3hzYnRpLmFwaS5PdXRwdXRTZXR0aW5netmaR3T7HXsCAAJMAA9vdXRwdXREaXJlY3RvcnlxAH4AHEwAD3NvdXJjZURpcmVjdG9yeXEAfgAceHB0AC5DOlxVc2Vyc1xvdWNoeHBcZ2l0XHByYWN0aXNlXFByYWN0aXNlU2NhbGFcYmludAAuQzpcVXNlcnNcb3VjaHhwXGdpdFxwcmFjdGlzZVxQcmFjdGlzZVNjYWxhXHNyY3VyAAJbQqzzF/gGCFTgAgAAeHAAAAAUOiY0o6Ztvh+u0bDga2hT21BO6jU=
+external apis:
+0 items
+source infos:
+6 items
+C:\Users\ouchxp\git\practise\PractiseScala\src\Actor.scala -> 
+AAAAAAAAAAA=
+C:\Users\ouchxp\git\practise\PractiseScala\src\ImplicitConvert.scala -> 
+AAAAAAAAAAA=
+C:\Users\ouchxp\git\practise\PractiseScala\src\MergeSort.scala -> 
+AAAAAAAAAAA=
+C:\Users\ouchxp\git\practise\PractiseScala\src\Monad.scala -> 
+AAAAAAAAAAA=
+C:\Users\ouchxp\git\practise\PractiseScala\src\Option.scala -> 
+AAAAAAAAAAA=
+C:\Users\ouchxp\git\practise\PractiseScala\src\Trait.scala -> 
+AAAAAAAAAAA=
+compilations:
+9 items
+0 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi5o+QJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIEQ6XHR0d29ya3NwYWNlXFByYWN0aXNlU2NhbGFcYmludAAgRDpcdHR3b3Jrc3BhY2VcUHJhY3Rpc2VTY2FsYVxzcmM=
+1 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi5z2Zx1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIEQ6XHR0d29ya3NwYWNlXFByYWN0aXNlU2NhbGFcYmludAAgRDpcdHR3b3Jrc3BhY2VcUHJhY3Rpc2VTY2FsYVxzcmM=
+2 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi50F1B1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIEQ6XHR0d29ya3NwYWNlXFByYWN0aXNlU2NhbGFcYmludAAgRDpcdHR3b3Jrc3BhY2VcUHJhY3Rpc2VTY2FsYVxzcmM=
+3 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi50XWV1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIEQ6XHR0d29ya3NwYWNlXFByYWN0aXNlU2NhbGFcYmludAAgRDpcdHR3b3Jrc3BhY2VcUHJhY3Rpc2VTY2FsYVxzcmM=
+4 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi50qfd1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIEQ6XHR0d29ya3NwYWNlXFByYWN0aXNlU2NhbGFcYmludAAgRDpcdHR3b3Jrc3BhY2VcUHJhY3Rpc2VTY2FsYVxzcmM=
+5 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi50+AJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIEQ6XHR0d29ya3NwYWNlXFByYWN0aXNlU2NhbGFcYmludAAgRDpcdHR3b3Jrc3BhY2VcUHJhY3Rpc2VTY2FsYVxzcmM=
+6 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi51MFt1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIEQ6XHR0d29ya3NwYWNlXFByYWN0aXNlU2NhbGFcYmludAAgRDpcdHR3b3Jrc3BhY2VcUHJhY3Rpc2VTY2FsYVxzcmM=
+7 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi51TAZ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQAIEQ6XHR0d29ya3NwYWNlXFByYWN0aXNlU2NhbGFcYmludAAgRDpcdHR3b3Jrc3BhY2VcUHJhY3Rpc2VTY2FsYVxzcmM=
+8 -> rO0ABXNyABV4c2J0aS5hcGkuQ29tcGlsYXRpb27t+uDDauigQgIAAkoACXN0YXJ0VGltZVsAB291dHB1dHN0ABpbTHhzYnRpL2FwaS9PdXRwdXRTZXR0aW5nO3hwAAABSi54NnJ1cgAaW0x4c2J0aS5hcGkuT3V0cHV0U2V0dGluZzt/asLzp4elQgIAAHhwAAAAAXNyABd4c2J0aS5hcGkuT3V0cHV0U2V0dGluZ3rZmkd0+x17AgACTAAPb3V0cHV0RGlyZWN0b3J5dAASTGphdmEvbGFuZy9TdHJpbmc7TAAPc291cmNlRGlyZWN0b3J5cQB+AAZ4cHQALkM6XFVzZXJzXG91Y2h4cFxnaXRccHJhY3Rpc2VcUHJhY3Rpc2VTY2FsYVxiaW50AC5DOlxVc2Vyc1xvdWNoeHBcZ2l0XHByYWN0aXNlXFByYWN0aXNlU2NhbGFcc3Jj
