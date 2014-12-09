@@ -8,4 +8,5 @@ Practise of Programming Languages or frameworks
 2. Add Java support in project facet.
 3. Right click project, configure -> add Scala nature.
 4. Add other required libraries, and rebuild.
+
 Tada!!!
