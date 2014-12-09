@@ -36,6 +36,7 @@ object TestOption extends App {
     //def getVersion() = "V1.0"
   }
 
+  import scala.language.postfixOps
   val version = SysUtil.getCoumputer
     .flatMap { _ getSoundCard }
     .flatMap { _ getUSB }
