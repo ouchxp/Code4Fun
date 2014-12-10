@@ -19,7 +19,7 @@ object TestTypeChecking extends App {
 
   /**
    * @see https://stackoverflow.com/questions/1094173/how-do-i-get-around-type-erasure-on-scala-or-why-cant-i-get-the-type-paramete
-   * You can use the Typeable type class from shapeless to get the result you're after,
+   * You can use the Typeable type class from shapeless <@link https://github.com/milessabin/shapeless> to get the result you're after,
    * Sample REPL session,
    *
    * scala> import shapeless.Typeable._
