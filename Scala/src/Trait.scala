@@ -8,6 +8,11 @@ object TestTrait extends App {
   }
 
   trait C extends A {
+    // abstract method
+    def getValue:Int
+    // call this abstract method to get inner status of a object
+    def printValue = println(getValue) 
+    
     def m2 = println("m2 from C called")
   }
 
@@ -22,6 +27,7 @@ object TestTrait extends App {
   }
 
   class E(i: Int) extends D(i) {
+    def getValue:Int = i
     def m4 = println("m4 called");
   }
 
@@ -36,22 +42,29 @@ object TestTrait extends App {
   // Error
   // class G(i: Int) with F {}
 
-  class H {}
+  class H {
+    def getValue = 1000
+  }
 
   class I extends H {}
 
+  // E mixin C in the class definition.
   val e = new E(1)
   e.m1
   e.m2
   e.m3
   e.m4
+  e.printValue
 
   def callM1(x: H) = x match {
     case x: C => x.m1
     case _ => println("No m1 found")
   }
 
+  // Mixin when creating object
   val h = new H with C
+  // After mixin trait C , h can print value
+  h.printValue
   // Error
   // val h = new H with F
   h.m1
@@ -64,7 +77,8 @@ object TestTrait extends App {
 
   val i = new I with C
   callM1(i)
-
+  // After mixin trait C , I can print value
+  i.printValue
 }
 
 
