@@ -92,8 +92,8 @@ object TestTrait extends App {
 }
 
 
-
-// Need have a look this 
+//TODO: check out how AOP can be achieved by trait 
+//TODO: Need have a look this 
 // http://stackoverflow.com/questions/10291176/how-to-use-scala-trait-with-self-reference
 //trait SelfAware { self: Self =>
 // ....
