@@ -94,6 +94,7 @@ object TestTrait extends App {
 
 //TODO: check out how AOP can be achieved by trait 
 //TODO: Have deeper understanding on mixin by reading this http://blog.csdn.net/gzlaiyonghao/article/details/1656969
+//TODO: http://stackoverflow.com/questions/10373318/mixing-in-a-trait-dynamically
 //TODO: Need have a look this (scala self type and what is the difference between self type and trait extend class constraint )
 // http://stackoverflow.com/questions/10291176/how-to-use-scala-trait-with-self-reference
 //trait SelfAware { self: Self =>
