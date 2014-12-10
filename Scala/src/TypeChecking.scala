@@ -35,4 +35,20 @@ object TestTypeChecking extends App {
    * res1: Option[List[Int]] = Some(List(1, 2, 3))
    * The cast operation will be as precise wrt erasure as possible given the in-scope Typeable instances available.
    */
+
+  val anyObj: Any = new Object
+  val anyInt: Any = 1
+  // The line below will not type check because Int is not a subtype of Object but a subtype of Any (Int < AnyVal < Any)
+  // val anyObj:Object = 1
+  
+  // Scala did a little trick on the type system, we knew that scala think Object is subtype of Any, 
+  // but we cannot get Any from obj.getClass.getSuperclass method (return null)
+  val obj: Object = new Object
+  println(obj.getClass.getSuperclass)
+  // getClass.getSuperclass method for Int is also null, that's because Int is considered a primitive type
+  println(1.getClass.getSuperclass)
+  println(1.getClass.isPrimitive)
+  // Unlike Object and Int, String type can get a valid result of superclass (class java.lang.Object)
+  println("".getClass.getSuperclass)
+
 }
