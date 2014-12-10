@@ -8,7 +8,17 @@ object TestTrait extends App {
   }
 
   trait C extends A {
-    // abstract method
+    // abstract method 
+    /**
+     * virtual field pattern
+     * @see http://www.oschina.net/question/12_65077
+     * @see http://mail.openjdk.java.net/pipermail/lambda-dev/2012-July/005171.html
+     * Scala's trait is not "real" mixin and not "real" trait
+     * @see http://stackoverflow.com/questions/5241219/how-are-scalas-traits-not-really-traits
+     * A real mixin can access field, but scala trait does not support it(can be acchive by virtual field pattern) 
+     * A key feature of real traits is that methods can be renamed when you import them.
+     * But Scala trait does not support this due to the JVM implementation.
+     */
     def getValue:Int
     // call this abstract method to get inner status of a object
     def printValue = println(getValue) 
