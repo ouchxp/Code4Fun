@@ -29,7 +29,7 @@ object TestFunctions extends App {
   }
 
   def higherOrderFun(f: Function[String, Object]) {
-    f.apply("Good");
+    f("Good");
   }
 
   /**
