@@ -5,6 +5,7 @@ import scala.util.Failure
 import scala.util.Success
 import scala.util.Try
 import scala.concurrent.Await
+import scala.concurrent.Promise
 object Concurrent extends App {
   val a: Try[String] = Success("good")
   val b: Try[String] = Failure(new Exception("not good"))
@@ -115,7 +116,13 @@ object Concurrent extends App {
     val f = Future[Int] { sys.error("failed") }
     val g = Future { 5 }
     val h = f fallbackTo g
+    
+    val z = f zip g
+    z.onComplete {
+      case t => println(t) 
+    }
     Await.result(h, 5 seconds) // evaluates to 5
+    Await.result(z, 5 seconds)
 
   }
   println("-------------------")
@@ -132,5 +139,9 @@ object Concurrent extends App {
     }
 
   }
+  
+  val pr = Promise[String]()
+  
+  
   Thread.sleep(100000);
 }
