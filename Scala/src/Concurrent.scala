@@ -87,7 +87,7 @@ object Concurrent extends App {
   }
 
   //------------------------
-  def retryUsingRecover(times: Int)(block: Future[String]): Future[String] = {
+  def retry(times: Int)(block: => Future[String]): Future[String] = {
     val attempts = (1 to times).map(_ => () => block)
     val failed = Future.failed[String](new Exception)
     // recover with is call by name, lazy evaluate block
@@ -96,7 +96,8 @@ object Concurrent extends App {
     attempts.foldLeft(failed)((a, blockFunc) => a recoverWith { case _ => blockFunc() })
   }
 
-  retryUsingRecover(10) {
+  retry(10) {
+
     Future {
       println("retryUsingRecover trying")
       anotherExpensiveComputation("resultstr")
@@ -105,28 +106,31 @@ object Concurrent extends App {
     case Failure(t) => println("retryUsingRecover f1: failed with exception " + t)
     case Success(v) => println("retryUsingRecover f1: " + v)
   }
-  //--------------------------
-  //TODO: need work on it why.....
-  def retryUsingFallbackto(noTimes: Int)(block: => Future[String]): Future[String] = {
-    val attempts = (1 to noTimes).map(_ => () => block)
-    val failed = Future.failed[String](new Exception)
-    val fold = attempts.foldRight(() => failed)(_)
-    val resultFunc = fold((block, a) => () => { block() fallbackTo { a() } })
-    resultFunc()
-  }
-
-  retryUsingFallbackto(10) {
-    Future {
-      println("retryUsingFallbackto trying")
-      anotherExpensiveComputation("resultstr")
-    }
-  }.onComplete {
-    case Failure(t) => println("retryUsingFallbackto f1: failed with exception " + t)
-    case Success(v) => println("retryUsingFallbackto f1: " + v)
-  }
 
   // Wait for result
   val c = Await.result(f3, 2 seconds)
   println(c)
+
+  {
+    val f = Future[Int] { sys.error("failed") }
+    val g = Future { 5 }
+    val h = f fallbackTo g
+    Await.result(h, 5 seconds) // evaluates to 5
+
+  }
+  println("-------------------")
+  
+  {
+
+    val f = Future { 5 }
+    
+    f andThen {
+      case r => println("r" + r)//sys.error("runtime exception")
+    } andThen {
+      case Failure(t) => println("t" + t)
+      case Success(v) => println("f" + v)
+    }
+
+  }
   Thread.sleep(100000);
 }
