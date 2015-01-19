@@ -116,32 +116,42 @@ object Concurrent extends App {
     val f = Future[Int] { sys.error("failed") }
     val g = Future { 5 }
     val h = f fallbackTo g
-    
+
     val z = f zip g
     z.onComplete {
-      case t => println(t) 
+      case t => println(t)
     }
     Await.result(h, 5 seconds) // evaluates to 5
     Await.result(z, 5 seconds)
 
   }
   println("-------------------")
-  
+
   {
 
     val f = Future { 5 }
-    
+
     f andThen {
-      case r => println("r" + r)//sys.error("runtime exception")
+      case r => println("r" + r) //sys.error("runtime exception")
     } andThen {
       case Failure(t) => println("t" + t)
       case Success(v) => println("f" + v)
     }
 
   }
-  
+
   val pr = Promise[String]()
-  
-  
+
+  def race[T](left: Future[T], right: Future[T]): Future[T] = {
+    val p = Promise[T]()
+    left onComplete { p.tryComplete(_) }
+    right onComplete { p.tryComplete(_) }
+    p.future
+  }
+
+  val f = race(Future { Thread.sleep(1000); 1 }, Future { 2 })
+  val result = Await.result(f, 5 seconds)
+  println("result" + result)
+
   Thread.sleep(100000);
 }
