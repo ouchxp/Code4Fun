@@ -144,14 +144,15 @@ object Concurrent extends App {
 
   def race[T](left: Future[T], right: Future[T]): Future[T] = {
     val p = Promise[T]()
-    left onComplete { p.tryComplete(_) }
-    right onComplete { p.tryComplete(_) }
+    left onComplete { p.tryComplete }
+    right onComplete { p.tryComplete }
     p.future
   }
 
   val f = race(Future { Thread.sleep(1000); 1 }, Future { 2 })
   val result = Await.result(f, 5 seconds)
   println("result" + result)
-
+  
+  
   Thread.sleep(100000);
 }
