@@ -19,6 +19,9 @@ object InversionCount extends App {
     }
   }
 
+  // The core idea is we can count cross inversion when merging two array
+  // like:  1 3 9 and 2 4 7, we found 3 > 2 and count+=2 (the remaining length of array1)
+  // then found 9 > 4 count+=1, 9 > 7 count+=1. So the cross inversion is 4 
   def mergeAndCountInv(sorted1: Array[Int], sorted2: Array[Int]): (Array[Int], Long) = {
     val rLen = sorted1.length + sorted2.length
     val result = new Array[Int](rLen)
