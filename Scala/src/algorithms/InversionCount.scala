@@ -50,4 +50,14 @@ object InversionCount extends App {
 
   println(sortAndCount(srcArr)._2)
   println("finished in " + (System.currentTimeMillis() - start) + "ms")
+
+  //Brutal force version takes 11s
+  var count: Long = 0
+  for {
+    i <- 0 until 100000
+    j <- i until 100000
+  } if (srcArr(i) > srcArr(j)) count += 1
+  println(count)
+  println("Brutal force version finished in " + (System.currentTimeMillis() - start) + "ms")
+
 }
