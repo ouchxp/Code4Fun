@@ -3,7 +3,7 @@ import scala.io.Source
 /**
  * This problem is from https://www.coursera.org/course/algo
  */
-object InversionCount extends App {
+object Week1InversionCount extends App {
   val srcArr = Source.fromFile("IntegerArray.txt", "UTF-8").getLines().map { x => x.toInt }.toArray
   val start = System.currentTimeMillis()
 
