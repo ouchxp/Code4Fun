@@ -22,7 +22,8 @@ object TestTypeChecking extends App {
   // This line below shows the actual method signature
   println(this.getClass.getDeclaredMethods.toList.filter(_.getName() == "matchGenericWithTypeTag").head)
   
-
+  val c = this ## //HashCode
+  val d = this -> "a" // Wrap this and other in to a tuple, like an entry of the map
   /**
    * @see https://stackoverflow.com/questions/1094173/how-do-i-get-around-type-erasure-on-scala-or-why-cant-i-get-the-type-paramete
    * You can use the Typeable type class from shapeless <@link https://github.com/milessabin/shapeless> to get the result you're after,
