@@ -16,6 +16,12 @@ object TestTypeChecking extends App {
   }
   matchGenericWithTypeTag(List(1, 2, 3))
   matchGenericWithTypeTag(List("a", "b", "c"))
+  
+  // Actually this is achieved by introducing one extra argument to the function,
+  // The extra argument is the generic type of current invocation
+  // This line below shows the actual method signature
+  println(this.getClass.getDeclaredMethods.toList.filter(_.getName() == "matchGenericWithTypeTag").head)
+  
 
   /**
    * @see https://stackoverflow.com/questions/1094173/how-do-i-get-around-type-erasure-on-scala-or-why-cant-i-get-the-type-paramete
@@ -50,5 +56,7 @@ object TestTypeChecking extends App {
   println(1.getClass.isPrimitive)
   // Unlike Object and Int, String type can get a valid result of superclass (class java.lang.Object)
   println("".getClass.getSuperclass)
+  
+  
 
 }
