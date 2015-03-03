@@ -11,8 +11,8 @@ object TestTypeChecking extends App {
   // This is how to identify the generic type
   import scala.reflect.runtime.universe._
   def matchGenericWithTypeTag[A: TypeTag](list: List[A]) = list match {
-    case strlist: List[String @unchecked] if typeOf[A] =:= typeOf[String] => println("A list of strings! " + strlist(0))
-    case intlist: List[Int @unchecked] if typeOf[A] =:= typeOf[Int] => println("A list of ints! " + intlist(0).toString)
+    case strlist: List[A] if typeOf[A] =:= typeOf[String] => println("A list of strings! " + strlist.head)
+    case intlist: List[A] if typeOf[A] =:= typeOf[Int] => println("A list of ints! " + intlist.head)
   }
   matchGenericWithTypeTag(List(1, 2, 3))
   matchGenericWithTypeTag(List("a", "b", "c"))
