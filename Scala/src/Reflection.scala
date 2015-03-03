@@ -90,8 +90,9 @@ object TestReflection extends App {
 
   case class F(name: String) {
     private var x = 10
+    private val y = 5
     def greet(msg: String) {
-      println(msg + " " + name + " " + x)
+      println(msg + " " + name + " " + x + ", " + y)
     }
   }
 
@@ -105,8 +106,8 @@ object TestReflection extends App {
   val f = new F("world")
   invoke(f, "greet", "hello")
 
-  /** Access private field */
-  // println(typeOf[F].decls) 
+  /** Access private var field */
+  println(typeOf[F].decls) 
   val xField = typeOf[F].decl(TermName("x")).asMethod.accessed.asTerm
   val fim = m.reflect(f)
   val xVar = fim.reflectField(xField)
@@ -114,5 +115,13 @@ object TestReflection extends App {
   xVar.set(20)
   f.greet("changed")
   //println(xField)
-
+  
+  /** Access private val filed */
+  // Able to change value of val field (even val is considered final)
+  val yField = typeOf[F].decl(TermName("y")).asTerm
+  println(yField)
+  val yVal = fim.reflectField(yField)
+  println(yVal.get)
+  yVal.set(6)
+  f.greet("changed")
 }
