@@ -19,7 +19,7 @@ object TestFunctions extends App {
 
   val pf1: PartialFunction[String, Unit] = {
     case "Good" => println("Feels Good!")
-    case _ => println("No good")
+    case "bad" => println("No good")
   }
   //----------------------------------------------
 
@@ -35,9 +35,32 @@ object TestFunctions extends App {
   /**
    * higherOrderFun can accept Function[Object, String]
    * it means Function[Object, String] <(is subclass of) Function[String, Object]
-   * So in function, argument type is contravariant, and return type is covariant 
+   * So in function, argument type is contravariant, and return type is covariant
    * The definition of Function class should be Function[-A, +B]
    */
   higherOrderFun(f4)
+
+  /**
+   * PartialFunction (是指定义域X中可能存在某些值在值域Y中没有对应的值)
+   * Does not generate output for every input, so we can test the definition domain
+   * by calling isDefinedAt method
+   * *************************
+   * PartialFunction is not Partial application function
+   * partial application is wrap a function with a default argument and _ etc.
+   * *************************
+   * 
+   */
+  println(pf1.isDefinedAt("worse"))
+
+  val pf2: PartialFunction[String, String] = {
+    case "Good" => "Feels Good!"
+    case "bad" => "No good"
+  }
+  /**
+   * We can use lift method to convert the PartialFunction to a normal function
+   * which return an Option type as result
+   */
+  println(pf2.lift("Good"));
+  println(pf2.lift("worse"));
 
 }
