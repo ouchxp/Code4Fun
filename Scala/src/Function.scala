@@ -41,14 +41,14 @@ object TestFunctions extends App {
   higherOrderFun(f4)
 
   /**
-   * PartialFunction (是指定义域X中可能存在某些值在值域Y中没有对应的值)
-   * Does not generate output for every input, so we can test the definition domain
+   * PartialFunction (是指定义域X中可能存在某些值在值域Y中没有对应的值) is a function that
+   * does not handle every input (incomplete), so we can test the definition domain
    * by calling isDefinedAt method
    * *************************
    * PartialFunction is not Partial application function
    * partial application is wrap a function with a default argument and _ etc.
    * *************************
-   * 
+   *
    */
   println(pf1.isDefinedAt("worse"))
 
@@ -63,4 +63,12 @@ object TestFunctions extends App {
   println(pf2.lift("Good"));
   println(pf2.lift("worse"));
 
+  val f5: Function2[Int, Int, Int] = (x: Int, y: Int) => x + y
+  println(f5(3, 4))
+
+  /**
+   * Here comes the partial application
+   * Specify the parameter type is required here
+   */
+  val f6 = f5(_: Int, 1)
 }
