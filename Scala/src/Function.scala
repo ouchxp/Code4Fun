@@ -52,10 +52,10 @@ object TestFunctions extends App {
    */
   println(pf1.isDefinedAt("worse"))
   
-  // Seq is an partial function because it matchs the definition
-  val pfs: PartialFunction[Int,Int] = Seq(1,2,3) 
+  // Seq or List are partial function because it matchs the definition
+  // Set is not because set does not have index
+  val pfs: PartialFunction[Int,Int] = List(1,2,3) 
   println(pfs.isDefinedAt(4))
-  
 
   val pf2: PartialFunction[String, String] = {
     case "Good" => "Feels Good!"
