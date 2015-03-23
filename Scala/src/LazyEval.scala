@@ -59,4 +59,18 @@ object LazyEval extends App {
   // This will evaluate future with call-by-name since it is a expression not value, it will not print "run" immediately
   val func = f2lazy(Future { println("run"); "abc" })
   Thread.sleep(1000);
+
+  // ----------Call by name call by value arguments -----------
+
+  def callByName(x: => Int) {
+    println("callByName");
+  }
+
+  def callByValue(x: Int) {
+    println("callByValue");
+  }
+  
+  
+  callByValue({ println("evaluating..."); 1 })
+  callByName({ println("evaluating..."); 1 })
 }
