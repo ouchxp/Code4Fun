@@ -1,19 +1,22 @@
 import akka.actor.ActorSystem
 import akka.actor.Actor
 import akka.actor.Props
+import akka.event.LoggingReceive
 
 object TestActor extends App {
   // Make these inner classes, so it won't conflict with other classes
   case class ObjectMessage(who: String)
   class Receiver extends Actor {
-    def receive = {
+
+    def receive = LoggingReceive {
       case ObjectMessage(who) => println("Hello " + who)
-      case "kill" => println("killing..."); context.system.shutdown; println("killed!")
+      case "kill" =>
+        println("killing..."); /* context.stop(self);*/ system.shutdown(); println("killed!")
       case i: Int => Thread.sleep(i)
       case x: String => println(x)
     }
   }
-  
+
   val system = ActorSystem create "MySystem"
   val greeter = system.actorOf(Props[Receiver], name = "greeter")
   val GREETER_PATH = greeter.path.toString
