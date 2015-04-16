@@ -27,14 +27,23 @@ object Collections extends App {
 
   // Use java concurrentHashMap instead
   new HashMap[String, String] with SynchronizedMap[String, String]
-  
+
   // Cons operation is call by name so steam will not evaluate until use
-  val stream = 1 #:: {println("get2");2} #:: Stream.empty
+  val stream = 1 #:: { println("get2"); 2 } #:: Stream.empty
   println(stream(0))
   println("nothing")
   println(stream(1))
+
+  println(Seq(1, 2, 3)) //Seq default is List
+  println(IndexedSeq(1, 2, 3)) //IndexedSeq default is Vector
+  println(SortedSet(1, 2, 3)) //TreeSet (red black tree)
+
+  // we can use pattern matching in for expression, to extract the element of case class object 
+  case class MyString(s: String) {
+    def mkString = "My:" + s
+  }
+  val myset: Set[MyString] = Set(MyString("good"), MyString("bad"))
+  val strSet: Set[String] = for (MyString(x) <- myset) yield x
   
-  println(Seq(1,2,3))//Seq default is List
-  println(IndexedSeq(1,2,3))//IndexedSeq default is Vector
-  println(SortedSet(1,2,3))//TreeSet (red black tree)
+
 }
