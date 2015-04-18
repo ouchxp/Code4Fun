@@ -44,6 +44,15 @@ object Collections extends App {
   }
   val myset: Set[MyString] = Set(MyString("good"), MyString("bad"))
   val strSet: Set[String] = for (MyString(x) <- myset) yield x
-  
+
+  /** 2 ways of implementing map function */
+  // map function could does not generate a new value directly, but build a channel/pipe that suck the data through it and change it.
+  // If the data doesn't change or doesn't matter if changed. (Just like the random number generator)
+  // but for mutable array, it will cause confusion, so the map function of array just create the new data directly/immediately
+  val mutableArr = Array[String]("1", "2", "3")
+  val mappedArr = mutableArr.map { x => x + "x" }
+  mutableArr(0) = "100"
+  println(mutableArr(0))
+  println(mappedArr(0)) // If it was building pipe (does not generate the data immediately), this would be 100x.
 
 }
