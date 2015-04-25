@@ -25,5 +25,7 @@ object CallByValueOrName extends App {
   }
 
   var i = 0
-  WHILE({ println("Evaluating condition " + (i < 5)); i < 5 })({ println("Executing command the " + i + " time"); i += 1 })
+  WHILE({ println("Evaluating condition " + (i < 5)); i < 5 }) {
+    println("Executing command the " + i + " time"); i += 1
+  }
 }
