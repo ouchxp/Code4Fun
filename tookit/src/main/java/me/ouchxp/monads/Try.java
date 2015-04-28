@@ -119,7 +119,7 @@ public abstract class Try<T> {
 
 	public abstract Optional<T> toOptional();
 
-	public <U> Try<U> transform(TryMapFunction<T, Try<U>> s, TryMapFunction<Throwable, Try<U>> f) {
+	public <U> Try<U> transform(TryMapFunction<? super T, Try<U>> s, TryMapFunction<? super Throwable, Try<U>> f) {
 		try {
 			return isSuccess() ? s.apply(get()) : f.apply(failed());
 		} catch (Throwable e) {
