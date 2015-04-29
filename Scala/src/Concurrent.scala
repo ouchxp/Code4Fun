@@ -7,6 +7,26 @@ import scala.util.Try
 import scala.concurrent.Await
 import scala.concurrent.Promise
 object Concurrent extends App {
+
+  // ---------------------------------
+  implicit class EnhancedFuture[T](self: Future[T]) {
+    def lazyFallbackTo(that: => Future[T]): Future[T] = {
+      self.recoverWith {
+        case _ => that.recoverWith { case _ => self }
+      }
+    }
+  }
+
+  val ft = Future { 1 }
+
+  // fallbackTo's argument `that` is call by value, so Future will be evaluated immediately
+  ft.fallbackTo(Future { println("eval that 2"); 2 })
+
+  // lazyFallbackTo is call by name, so the second future only evaluate after first one failed
+  ft.lazyFallbackTo(Future { println("eval that 3"); 3 })
+
+  //-----------------------------------
+
   val a: Try[String] = Success("good")
   val b: Try[String] = Failure(new Exception("not good"))
 
@@ -152,7 +172,6 @@ object Concurrent extends App {
   val f = race(Future { Thread.sleep(1000); 1 }, Future { 2 })
   val result = Await.result(f, 5 seconds)
   println("result" + result)
-  
-  
+
   Thread.sleep(100000);
 }
