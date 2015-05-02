@@ -1,4 +1,5 @@
 import scala.concurrent.ExecutionContext.Implicits.global
+import scala.async.Async.{ async, await }
 import scala.concurrent.duration._
 import scala.concurrent.Future
 import scala.util.Failure
@@ -8,6 +9,17 @@ import scala.concurrent.Await
 import scala.concurrent.Promise
 object Concurrent extends App {
 
+  val future = async {
+    val f1 = async { println("eval f1"); false }
+    val f2 = async { println("eval f2"); 42 }
+    if (await(f1)) await(f2) else 0
+  }
+
+  val ffs:Future[String] = Future {throw new Exception()}
+  val ffs2 = ffs.filter(x => x.length() > 1)
+  ffs2.onComplete { x => println(x) }
+
+  async { println(await(future)) }
   // ---------------------------------
   implicit class EnhancedFuture[T](self: Future[T]) {
     def lazyFallbackTo(that: => Future[T]): Future[T] = {
@@ -160,12 +172,14 @@ object Concurrent extends App {
 
   }
 
+  // Promise is literally a promise, it represent a process that promise you to complete.
+  // (Futures can fail, or race to complete one promise), we can compose Futures in different ways using Promise
   val pr = Promise[String]()
 
   def race[T](left: Future[T], right: Future[T]): Future[T] = {
     val p = Promise[T]()
-    left onComplete { p.tryComplete }
-    right onComplete { p.tryComplete }
+    left onComplete { p.tryComplete(_) }
+    right onComplete { p.tryComplete(_) }
     p.future
   }
 
