@@ -13,7 +13,7 @@ import java.util.function.Function;
  *
  * @param <T>
  */
-
+//TODO: throw IllegalStateException instead of throwable
 
 public abstract class Try<T> {
 
