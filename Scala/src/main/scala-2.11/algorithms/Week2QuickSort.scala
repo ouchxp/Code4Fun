@@ -1,3 +1,5 @@
+package algorithms
+
 
 import scala.io.Source
 

@@ -1,3 +1,5 @@
+import scala.reflect._
+import scala.reflect.runtime.universe._
 object TestTypeChecking extends App {
 
   def macthGeneric[A](lst: List[A]) = lst match {
@@ -9,7 +11,6 @@ object TestTypeChecking extends App {
   macthGeneric(List(1, 2, 3))
 
   // This is how to identify the generic type
-  import scala.reflect.runtime.universe._
   def matchGenericWithTypeTag[A: TypeTag](list: List[A]) = list match {
     case strlist: List[A] if typeOf[A] =:= typeOf[String] => println("A list of strings! " + strlist.head)
     case intlist: List[A] if typeOf[A] =:= typeOf[Int] => println("A list of ints! " + intlist.head)

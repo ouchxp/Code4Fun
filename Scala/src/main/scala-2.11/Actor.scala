@@ -1,6 +1,4 @@
-import akka.actor.ActorSystem
-import akka.actor.Actor
-import akka.actor.Props
+import akka.actor.{Props, Actor, ActorSystem}
 import akka.event.LoggingReceive
 
 object TestActor extends App {

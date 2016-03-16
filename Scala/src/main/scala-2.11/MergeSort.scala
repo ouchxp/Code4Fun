@@ -1,4 +1,4 @@
-import scala.util.Random
+
 
 object TestMergeSort extends App {
   List(1, 2, 3, 4).filter { x => x > 2 }.foreach { println _ }
@@ -6,7 +6,7 @@ object TestMergeSort extends App {
   val v = Vector(1, 3, 3, 5, 1, 0, 9, 2, 3, 4)
 
   def sort(v: Vector[Int]): Vector[Int] = {
-    if (v.length < 2) return v;
+    if (v.length < 2) return v
     val (v1, v2) = v.splitAt(v.length / 2)
     return merge(sort(v1), sort(v2))
   }

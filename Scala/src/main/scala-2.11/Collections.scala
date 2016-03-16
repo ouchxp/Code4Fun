@@ -1,6 +1,5 @@
-import scala.collection.mutable.HashMap
-import scala.collection.mutable.SynchronizedMap
 import scala.collection.SortedSet
+import scala.collection.mutable.{HashMap, SynchronizedMap}
 
 object Collections extends App {
   /**

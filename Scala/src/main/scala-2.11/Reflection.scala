@@ -1,12 +1,13 @@
-import scala.reflect.runtime.universe._
-import scala.reflect.ClassTag
+
 object TestReflection extends App {
+  import scala.reflect._
+  import scala.reflect.runtime.universe._
+  val tp = typeOf[List[String]]
 
   val list = List(1, 2, 3)
   def getTypeTag[T: TypeTag](obj: T) = typeTag[T]
   def getGenericTypeTag[T: TypeTag](obj: List[T]) = typeTag[T]
   val tpe = getTypeTag(list).tpe
-
   tpe.ensuring(_ =:= typeOf[List[Int]]) // Type equal
   println("The 4th symbol of type " + tpe + " is " + tpe.decls.toList(4)) // 4th symbol is tail method
   println(getGenericTypeTag(list))

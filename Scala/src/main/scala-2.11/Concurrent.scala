@@ -1,12 +1,8 @@
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.async.Async.{ async, await }
+import scala.concurrent.{Await, Future, Promise}
 import scala.concurrent.duration._
-import scala.concurrent.Future
-import scala.util.Failure
-import scala.util.Success
-import scala.util.Try
-import scala.concurrent.Await
-import scala.concurrent.Promise
+import scala.util.{Failure, Success, Try}
+import scala.async.Async._
 object Concurrent extends App {
 
   val future = async {
@@ -97,19 +93,19 @@ object Concurrent extends App {
     }
   }
 
-  def badretry(times: Int)(block: Future[String]): Future[String] = {
+  def badRetry(times: Int)(block: Future[String]): Future[String] = {
     if (times == 0) {
       Future.failed(new Exception("Sorry"))
     } else {
       block fallbackTo {
-        badretry(times - 1) { block }
+        badRetry(times - 1) { block }
       }
     }
   }
 
   // fallbackto method is not lazy evaluate, so the two futures will run in parallel
   // Not one after another failed
-  badretry(10) {
+  badRetry(10) {
     Future {
       println("badretry trying")
       anotherExpensiveComputation("fffr")
@@ -187,5 +183,5 @@ object Concurrent extends App {
   val result = Await.result(f, 5 seconds)
   println("result" + result)
 
-  Thread.sleep(100000);
+  Thread.sleep(100000)
 }

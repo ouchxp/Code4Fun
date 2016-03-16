@@ -1,11 +1,5 @@
-import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
-import scala.concurrent.duration._
-import scala.util.Failure
-import scala.util.Success
-import scala.util.Try
-import scala.concurrent.Await
-import scala.concurrent.Promise
+import scala.concurrent.Future
 object LazyEval extends App {
 
   def defstr = { // actually is a function

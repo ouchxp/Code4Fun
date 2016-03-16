@@ -29,7 +29,7 @@ object TestFunctions extends App {
   }
 
   def higherOrderFun(f: Function[String, Object]) {
-    f("Good");
+    f("Good")
   }
 
   /**
@@ -65,8 +65,8 @@ object TestFunctions extends App {
    * We can use lift method to convert the PartialFunction to a normal function
    * which return an Option type as result
    */
-  println(pf2.lift("Good"));
-  println(pf2.lift("worse"));
+  println(pf2.lift("Good"))
+  println(pf2.lift("worse"))
 
   val f5: Function2[Int, Int, Int] = (x: Int, y: Int) => x + y
   println(f5(3, 4))
