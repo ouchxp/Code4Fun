@@ -2,7 +2,6 @@
 object TestReflection extends App {
   import scala.reflect._
   import scala.reflect.runtime.universe._
-  val tp = typeOf[List[String]]
 
   val list = List(1, 2, 3)
   def getTypeTag[T: TypeTag](obj: T) = typeTag[T]
