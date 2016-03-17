@@ -12,7 +12,9 @@ trait False extends Bool {
 
 type IfIntElseLong[A <: Bool] = A#If[Int,Long]
 
-// TODO: what is implicitly means
+/** what is implicitly means */
+// implicitly check if an implicit value of type T is available and return it
+
 implicitly[ IfIntElseLong[True] =:= Int ]
 implicitly[ IfIntElseLong[False] =:= Long ]
 
