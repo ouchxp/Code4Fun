@@ -24,20 +24,28 @@ const ButtonFrame = React.createClass({
 });
 
 const AnswerFrame = React.createClass({
+  propTypes: {
+    selectedNumbers: React.PropTypes.arrayOf(React.PropTypes.number).isRequired
+  },
   render: function () {
     return (
       <div id="answer-frame">
-        <div className="well">...</div>
+        <div className="well">
+          {this.props.selectedNumbers}
+        </div>
       </div>
     );
   }
 });
 
 const NumbersFrame = React.createClass({
+  propTypes: {
+    selectedNumbers: React.PropTypes.arrayOf(React.PropTypes.number).isRequired
+  },
   render: function () {
-
     const numbers = new Array(9).fill(0)
-      .map((elem, idx) => <div key={idx+1} className="number">{idx + 1}</div>);
+      .map((elem, idx) => idx + 1)
+      .map(idx => <div key={idx} className={"number" + (this.props.selectedNumbers.indexOf(idx) >=0 ? " selected-true" : "")}>{idx}</div>);
     return (
       <div id="numbers-frame">
         <div className="well">
@@ -49,6 +57,9 @@ const NumbersFrame = React.createClass({
 });
 
 const Game = React.createClass({
+  getInitialState: function () {
+    return {selectedNumbers: [3, 6]};
+  },
   render: function () {
     return (
       <div id="game">
@@ -57,9 +68,9 @@ const Game = React.createClass({
         <div className="clearfix">
           <StartsFrame/>
           <ButtonFrame/>
-          <AnswerFrame/>
+          <AnswerFrame selectedNumbers={this.state.selectedNumbers}/>
         </div>
-        <NumbersFrame/>
+        <NumbersFrame selectedNumbers={this.state.selectedNumbers}/>
       </div>
     );
   }
