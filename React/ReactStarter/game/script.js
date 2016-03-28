@@ -40,8 +40,8 @@ const ButtonFrame = React.createClass({
         break;
       default:
         const disabled = this.props.selectedNumbers.length === 0;
-        button =
-          <button onClick={this.props.checkAnswer} className="btn btn-primary btn-lg" disabled={disabled}>=</button>
+        button = <button onClick={this.props.checkAnswer} className="btn btn-primary btn-lg"
+                         disabled={disabled}>=</button>
     }
 
     return (
@@ -66,8 +66,8 @@ const AnswerFrame = React.createClass({
   },
   render: function () {
 
-    const selectedNumbers = this.props.selectedNumbers.map(i => <span key={i}
-                                                                      onClick={this.props.unselectNumber.bind(null, i)}>{i}</span>);
+    const selectedNumbers = this.props.selectedNumbers
+      .map(i => <span key={i} onClick={this.props.unselectNumber.bind(null, i)}>{i}</span>);
     return (
       <div id="answer-frame">
         <div className="well">
@@ -189,7 +189,7 @@ const Game = React.createClass({
       arr.pop();
       return this.possibleCombinationSum(arr, n);
     }
-    var listSize = arr.length, combinationsCount = (1 << listSize)
+    var listSize = arr.length, combinationsCount = (1 << listSize);
     for (var i = 1; i < combinationsCount; i++) {
       var combinationSum = 0;
       for (var j = 0; j < listSize; j++) {
@@ -230,7 +230,8 @@ const Game = React.createClass({
     const selectedNumbers = this.state.selectedNumbers;
     const usedNumbers = this.state.usedNumbers;
     const numberOfStars = this.state.numberOfStars;
-    const bottomFrame = this.state.doneStatus ? <DoneFrame doneStatus={this.state.doneStatus} resetGame={this.resetGame} /> :
+    const bottomFrame = this.state.doneStatus ?
+      <DoneFrame doneStatus={this.state.doneStatus} resetGame={this.resetGame}/> :
       <NumbersFrame selectedNumbers={selectedNumbers} selectNumber={this.selectNumber}
                     usedNumbers={usedNumbers}/>;
 
