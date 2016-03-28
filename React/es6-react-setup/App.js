@@ -26,6 +26,7 @@ class App extends React.Component {
         <Slider ref="red" update={this.update}/> {this.state.red}
         <Slider ref="green" update={this.update}/> {this.state.green}
         <Slider ref="blue" update={this.update}/> {this.state.blue}
+        <Button>I <Heart/> React</Button>
       </div>
     );
   }
@@ -40,6 +41,15 @@ class Slider extends React.Component {
     );
   }
 }
+
+/** Use this.props.children to reference the innerHTML of component */
+class Button extends React.Component {
+  render () {
+    return <button>{this.props.children}</button>
+  }
+}
+
+const Heart = () => <span className="glyphicon glyphicon-heart"/>;
 
 // const Widget = (props) => {
 //   return (
