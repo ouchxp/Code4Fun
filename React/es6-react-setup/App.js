@@ -72,6 +72,4 @@ const Heart = () => <span className="glyphicon glyphicon-heart"/>;
 // Short hand for state less function component
 // const App = () => <h1>Hello World</h1>;
 
-ReactDOM.render(<App/>, document.getElementById('app'));
-
 export default App
