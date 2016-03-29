@@ -33,6 +33,9 @@ class App extends React.Component {
 }
 
 class Slider extends React.Component {
+  static propTypes = {
+    update: React.PropTypes.func.isRequired
+  };
   render () {
     return (
       <div>
