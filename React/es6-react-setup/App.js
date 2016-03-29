@@ -20,16 +20,28 @@ class App extends React.Component {
     })
   }
 
+  mountSlider() {
+    ReactDOM.render(<Slider update={this.update}/>, document.getElementById("slider"));
+  }
+
+  unmountSlider() {
+    ReactDOM.unmountComponentAtNode(document.getElementById("slider"));
+  }
+
   render() {
     return (
       <div>
         <Slider ref="red" update={this.update}/> {this.state.red}
         <Slider ref="green" update={this.update}/> {this.state.green}
         <Slider ref="blue" update={this.update}/> {this.state.blue}
-        <Button>I <Heart/> React</Button>
+        <RButton>I <Heart/> React</RButton>
+        <button onClick={this.mountSlider.bind(this)}>Mount a Slider</button>
+        <button onClick={this.unmountSlider.bind(this)}>Unmount a Slider</button>
+        <div id="slider"></div>
       </div>
     );
   }
+
 }
 
 class Slider extends React.Component {
@@ -37,16 +49,25 @@ class Slider extends React.Component {
     update: React.PropTypes.func.isRequired
   };
   render () {
+    console.log("rendering");
     return (
       <div>
         <input ref="inp" type="range" min="0" max="255" onChange={this.props.update} />
       </div>
     );
   }
+
+  componentWillMount() {
+    console.log("will mounted");
+  }
+
+  componentDidMount() {
+    console.log("mounted");
+  }
 }
 
 /** Use this.props.children to reference the innerHTML of component */
-class Button extends React.Component {
+class RButton extends React.Component {
   render () {
     return <button>{this.props.children}</button>
   }
