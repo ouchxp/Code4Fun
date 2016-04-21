@@ -62,35 +62,30 @@ object Show {
 case class Plus[A, B](a: A, b: B)
 case class Minus[A, B](a: A, b: B)
 
-object ExpressionEvaluator {
-  def evaluate[A: Expression](expr: A): Int = implicitly[Expression[A]].value(expr)
-}
+def evaluate[A: Expression](expr: A): Int = implicitly[Expression[A]].value(expr)
 
-object StringPrinter {
+//import Show.toShowOps
+def log[A: Show](x: A): String = {
   import Show.toShowOps
-  def print[A: Show](x: A): String = x.show
-  // Or:
-  // def print[A: Show](x: A): String = implicitly[Show[A]].show(x)
+  x.show
 }
+// Or:
+// def log[A: Show](x: A): String = implicitly[Show[A]].show(x)
 
-ExpressionEvaluator.evaluate(1)
-ExpressionEvaluator.evaluate(Plus(3, 2))
-ExpressionEvaluator.evaluate(Minus(3, Plus(2, 1)))
-ExpressionEvaluator.evaluate(Minus("6", Plus(2, 1)))
+evaluate(1)
+evaluate(Plus(3, 2))
+evaluate(Minus(3, Plus(2, 1)))
+evaluate(Minus("6", Plus(2, 1)))
 
-StringPrinter.print(1)
-StringPrinter.print(Plus(3, 2))
-StringPrinter.print(Minus(3, Plus(2, 1)))
-StringPrinter.print(Minus("6", Plus(2, 1)))
+log(1)
+log(Plus(3, 2))
+log(Minus(3, Plus(2, 1)))
+log(Minus("6", Plus(2, 1)))
 // This will not type check because no implicits defined for double => Show
 // StringPrinter.print(Minus(3.3, Plus(2, 1)))
 
-def log1[A](a: A)(implicit s: Show[A]) = println(s.show(a))
-def log2[A: Show](a: A) = println(implicitly[Show[A]].show(a))
-def log3[A: Show](a: A) = {
-  import Show.toShowOps
-  println(a.show)
-}
+// Alternative log functions
+def log1[A](x: A)(implicit s: Show[A]) = println(s.show(x))
+def log2[A: Show](x: A) = println(implicitly[Show[A]].show(x))
 log1(Plus(3, 2))
 log2(Plus(3, 2))
-log3(Plus(3, 2))
