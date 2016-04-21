@@ -59,8 +59,8 @@ object Show {
   implicit def minusShow[A: Show, B: Show] = show[Minus[A, B]](x => s"(${x.a.show} - ${x.b.show})")
 }
 
-case class Plus[A: Expression, B: Expression](a: A, b: B)
-case class Minus[A: Expression, B: Expression](a: A, b: B)
+case class Plus[A, B](a: A, b: B)
+case class Minus[A, B](a: A, b: B)
 
 object ExpressionEvaluator {
   def evaluate[A: Expression](expr: A): Int = implicitly[Expression[A]].value(expr)
