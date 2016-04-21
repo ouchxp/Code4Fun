@@ -1,5 +1,3 @@
-
-
 // Simply speaking
 // 1. A typleclass is represented by a parameterized trait e.g. Expression[A],
 // defining operations on member types
@@ -45,18 +43,23 @@ object Show {
     def show(a: A): String = f(a)
   }
 
+  /** Show operations */
+  trait Ops[T] {
+    def show : String
+  }
+
+  /** Implicit convert a Show[T] object to Show.Ops[T] that have a show function */
+  implicit def toShowOps[T: Show](target : T) : Show.Ops[T] = new Ops[T] {
+    override def show: String = implicitly[Show[T]].show(target)
+  }
+
   implicit val intShow = show[Int](_.toString)
   implicit val stringShow = show[String](_)
-  implicit def plusShow[A: Show, B: Show] = show[Plus[A, B]](x => {
-    s"(${implicitly[Show[A]].show(x.a)} + ${implicitly[Show[B]].show(x.b)})"
-  })
-  implicit def minusShow[A: Show, B: Show] = show[Minus[A, B]](x => {
-    s"(${implicitly[Show[A]].show(x.a)} - ${implicitly[Show[B]].show(x.b)})"
-  })
+  implicit def plusShow[A: Show, B: Show] = show[Plus[A, B]](x => s"(${x.a.show} + ${x.b.show})")
+  implicit def minusShow[A: Show, B: Show] = show[Minus[A, B]](x => s"(${x.a.show} - ${x.b.show})")
 }
 
 case class Plus[A: Expression, B: Expression](a: A, b: B)
-
 case class Minus[A: Expression, B: Expression](a: A, b: B)
 
 object ExpressionEvaluator {
@@ -64,7 +67,10 @@ object ExpressionEvaluator {
 }
 
 object StringPrinter {
-  def print[A: Show](x: A): String = implicitly[Show[A]].show(x)
+  import Show.toShowOps
+  def print[A: Show](x: A): String = x.show
+  // Or:
+  // def print[A: Show](x: A): String = implicitly[Show[A]].show(x)
 }
 
 ExpressionEvaluator.evaluate(1)
