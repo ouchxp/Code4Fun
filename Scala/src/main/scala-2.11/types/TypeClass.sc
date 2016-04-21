@@ -81,3 +81,12 @@ StringPrinter.print(1)
 StringPrinter.print(Plus(3, 2))
 StringPrinter.print(Minus(3, Plus(2, 1)))
 
+def log1[A](a: A)(implicit s: Show[A]) = println(s.show(a))
+def log2[A: Show](a: A) = println(implicitly[Show[A]].show(a))
+def log3[A: Show](a: A) = {
+  import Show.toShowOps
+  println(a.show)
+}
+log1(Plus(3, 2))
+log2(Plus(3, 2))
+log3(Plus(3, 2))
