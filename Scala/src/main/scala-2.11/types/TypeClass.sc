@@ -54,7 +54,7 @@ object Show {
   }
 
   implicit val intShow = show[Int](_.toString)
-  implicit val stringShow = show[String](_)
+  implicit val stringShow = show[String](x => x)
   implicit def plusShow[A: Show, B: Show] = show[Plus[A, B]](x => s"(${x.a.show} + ${x.b.show})")
   implicit def minusShow[A: Show, B: Show] = show[Minus[A, B]](x => s"(${x.a.show} - ${x.b.show})")
 }
@@ -76,10 +76,14 @@ object StringPrinter {
 ExpressionEvaluator.evaluate(1)
 ExpressionEvaluator.evaluate(Plus(3, 2))
 ExpressionEvaluator.evaluate(Minus(3, Plus(2, 1)))
+ExpressionEvaluator.evaluate(Minus("6", Plus(2, 1)))
 
 StringPrinter.print(1)
 StringPrinter.print(Plus(3, 2))
 StringPrinter.print(Minus(3, Plus(2, 1)))
+StringPrinter.print(Minus("6", Plus(2, 1)))
+// This will not type check because no implicits defined for double => Show
+// StringPrinter.print(Minus(3.3, Plus(2, 1)))
 
 def log1[A](a: A)(implicit s: Show[A]) = println(s.show(a))
 def log2[A: Show](a: A) = println(implicitly[Show[A]].show(a))
