@@ -12,10 +12,10 @@ import cats.syntax.show._
 
 // new Object().show // won't pass type checking because there are no implicitly conversion defined for Object
 
-case class Test()
+case class Test(value: String)
 // Use implicit to add show function to type
 // And
-implicit val testShow: Show[Test] = Show.show[Test](x => "good")
+implicit val testShow: Show[Test] = Show.show[Test](x => x.value)
 
-Test().show
+Test("good").show
 
