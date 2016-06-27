@@ -16,6 +16,9 @@ val c1 = ContextBound(10)
 //val c2 = ContextBound(new Object())
 /**Several ways to write a context bound*/
 type CONVERTER[X] = X => Comparable[X]
+// FIXME: the way using context bound is wrong here. It should be used like in TypeClass.sc
+// FIXME: need refactor to make the intention clear at some day.
+
 def goo1[T : CONVERTER](x: T):Comparable[T] = x
 // hash(#) means reference to the nested type, which means the function type we defined here (nasty)
 /** @see http://stackoverflow.com/questions/9443004/what-does-the-operator-mean-in-scala */
