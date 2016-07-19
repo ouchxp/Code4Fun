@@ -1,2 +1,2 @@
 #####Double Click
-http://jsfiddle.net/4gGgs/565/
+http://jsfiddle.net/4gGgs/566/
