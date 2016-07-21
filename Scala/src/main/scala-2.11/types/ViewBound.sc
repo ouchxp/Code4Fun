@@ -1,4 +1,11 @@
 import scala.language.reflectiveCalls
+import scala.reflect.runtime.universe.typeOf
+
+/** Int is not a direct subtype of Comparable **/
+typeOf[Int] <:< typeOf[Comparable[Int]]
+/** Implicit conversion exist for Int => Comparable[Int], actually Int => RichInt **/
+val comparableInt: Comparable[Int] = 10
+comparableInt.getClass // RichInt
 
 /** ViewBound is deprecated */
 /*Normal Type bound does not allow implicit conversion*/
@@ -14,6 +21,8 @@ val n2 = ViewBound(10)
 val c1 = ContextBound(10)
 /*This won't pass because Object does not have implicit conversion to Comparable*/
 //val c2 = ContextBound(new Object())
+
+
 /**Several ways to write a context bound*/
 type CONVERTER[X] = X => Comparable[X]
 // FIXME: the way using context bound is wrong here. It should be used like in TypeClass.sc
@@ -30,3 +39,5 @@ def goo3[T](x: T)(implicit ev: T => Comparable[T]):Comparable[T] = x
 goo1(10)
 goo2(10)
 goo3(10)
+/**This is working because Int can convert to RichInt implicitly, and RichInt is Comparable **/
+
