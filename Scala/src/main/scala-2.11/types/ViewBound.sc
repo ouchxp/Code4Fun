@@ -27,12 +27,14 @@ val c1 = ContextBound(10)
 type CONVERTER[X] = X => Comparable[X]
 // FIXME: the way using context bound is wrong here. It should be used like in TypeClass.sc
 // FIXME: need refactor to make the intention clear at some day.
+// FIXME: it should be used along with implicitly[T], not used as a implicit conversion function
+// FIXME: otherwise it becomes very subtle
 
-def goo1[T : CONVERTER](x: T):Comparable[T] = x
+def goo1[T : CONVERTER](x: T):Comparable[T] = implicitly[CONVERTER[T]].apply(x)
 // hash(#) means reference to the nested type, which means the function type we defined here (nasty)
 /** @see http://stackoverflow.com/questions/9443004/what-does-the-operator-mean-in-scala */
-def goo2[T :({type L[X] = X => Comparable[X]})#L](x: T):Comparable[T] = x
-def goo3[T](x: T)(implicit ev: T => Comparable[T]):Comparable[T] = x
+def goo2[T :({type L[X] = X => Comparable[X]})#L](x: T):Comparable[T] = implicitly[CONVERTER[T]].apply(x)
+def goo3[T](x: T)(implicit ev: T => Comparable[T]):Comparable[T] = ev.apply(x)
 /* You cannot define type directly here, have to define first or, define and use # to reference to it*/
 //def goo4[T : T => Comparable[T]](x: T):Comparable[T] = x
 // Other implementations are working
