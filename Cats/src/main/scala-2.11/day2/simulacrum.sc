@@ -49,10 +49,7 @@ object CanTruthy {
 }
 */
 
-implicit val intCanTruthy: CanTruthy[Int] = CanTruthy.fromTruthy({
-  case 0 => false
-  case _ => true
-})
+implicit val intCanTruthy: CanTruthy[Int] = CanTruthy.fromTruthy(_ != 0)
 
 import CanTruthy.ops._
 
