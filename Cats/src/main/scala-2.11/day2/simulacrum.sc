@@ -4,7 +4,7 @@ import simulacrum.{op, typeclass}
 @typeclass trait CanTruthy[A] { self =>
   // Return true, if `a` is truthy.
   // We can use @op annotation to specify a symbolic operator
-  @op("?") def truthy(a: A): Boolean
+  def truthy(a: A): Boolean
 }
 object CanTruthy {
   def fromTruthy[A](f: A => Boolean): CanTruthy[A] = new CanTruthy[A] {
@@ -56,5 +56,6 @@ implicit val intCanTruthy: CanTruthy[Int] = CanTruthy.fromTruthy({
 
 import CanTruthy.ops._
 
-val a = 10?
-val b = 0?
+val a = 10 truthy
+val b = 0 truthy
+
