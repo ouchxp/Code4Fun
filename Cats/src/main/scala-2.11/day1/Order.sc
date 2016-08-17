@@ -9,5 +9,10 @@ import algebra.Order._
 // implicit conversions for common types are defined in cats.std.all._
 compare(1, 2)
 1L compare 1
-// TODO: Don't know how it works, if use 1 compare 2 Will call scala's built in compare function
+
+val a = Long.box(1)
+val b = Int.box(1)
+// a compare b
+// this won't pass because a and b have different type
+// and do not have implicit conversion
 

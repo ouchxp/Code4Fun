@@ -1,9 +1,11 @@
 import cats._
-import cats.std.all._
 import cats.syntax.show._
 
-3.show
-
+{ // cats provides some predefined implicits for show types
+  // usually use import cats.std.all._ to import them all
+  import cats.std.all.intShow
+  3.show
+}
 
 // Show is a type safe version of toString (Really?). since toString is everywhere... we lose the type safety form it
 // Show requires the object to have a Show[T] type class instance
@@ -12,10 +14,9 @@ import cats.syntax.show._
 
 // new Object().show // won't pass type checking because there are no implicitly conversion defined for Object
 
-case class Test(value: String)
+case class Car(model: String)
 // Use implicit to add show function to type
-// And
-implicit val testShow: Show[Test] = Show.show[Test](x => x.value)
-
-Test("good").show
-
+// there are two ways of adding show, use Show.fromToString or Show.show
+// implicit val carShow = Show.fromToString[Car]
+implicit val carShow = Show.show[Car](_.model)
+Car("CR-V").show
