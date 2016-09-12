@@ -1,9 +1,5 @@
-import cats._
-import cats.std.all._
-import cats.syntax.order._
-import algebra.std._
-import algebra._
-import algebra.Order._
+import cats.implicits._
+import cats.Order.compare
 1 > 2.0
 
 // implicit conversions for common types are defined in cats.std.all._

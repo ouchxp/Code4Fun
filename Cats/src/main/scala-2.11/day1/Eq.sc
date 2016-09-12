@@ -1,6 +1,4 @@
-import cats._
-import cats.std.all._
-import cats.syntax.eq._
+import cats.implicits._
 
 // implicit conversions for common types are defined in cats.std.all._
 

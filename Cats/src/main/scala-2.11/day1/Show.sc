@@ -1,9 +1,9 @@
-import cats._
-import cats.syntax.show._
+import cats.Show
+import cats.implicits._
 
 { // cats provides some predefined implicits for show types
-  // usually use import cats.std.all._ to import them all
-  import cats.std.all.intShow
+  // usually use import cats.implicits._ to import them all
+  import cats.implicits.catsStdShowForInt
   3.show
 }
 
