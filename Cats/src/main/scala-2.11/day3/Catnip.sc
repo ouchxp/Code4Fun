@@ -1,6 +1,8 @@
 import cats.Functor
 import cats.implicits.catsStdInstancesForList
 
+import scala.language.implicitConversions
+
 val curried = {(x: Int, y: Int) => x * y}.curried
 // producing list of function
 val hs = Functor[List].map(List(1, 2, 3, 4))(curried)
