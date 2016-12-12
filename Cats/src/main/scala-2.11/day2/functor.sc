@@ -25,3 +25,12 @@ lifted(List(1, 2, 3))
 List(1, 2, 3).void
 List(1, 2, 3) fproduct {(_: Int) * 2}
 List(1, 2, 3) as "x"
+
+left.void
+right.void
+
+left fproduct {(_: Int) * 2}
+right fproduct {(_: Int) * 2}
+
+left as "x"
+right as "x"

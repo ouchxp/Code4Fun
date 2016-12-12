@@ -5,15 +5,32 @@ import cats.implicits._
 (3.some |@| 5.some) map { _ - _ }
 (none[Int] |@| 5.some) map { _ - _ }
 (3.some |@| none[Int]) map { _ - _ }
+// 3 | -2
+//   |_____
+//      5
 
 // List as cartesian (Cartesian product)
 (List("ha", "heh", "hmm") |@| List("?", "!", ".")) map {_ + _}
+// ha  | ha?  ha!  ha.
+// heh | heh? heh! heh.
+// hmm | hmm? hmm! hmm.
+//     |_______________
+//        ?    !    .
 
-// *> and <* operators, pick the one arrow pointing to if both not None
+
+// *> and <* operators, pick the one arrow pointing to
+// to populate the matirx values
 3.some <* 2.some
 none[Int] <* 2.some
 1.some *> 2.some
 none[Int] *> 2.some
+
+List("ha", "heh", "hmm") <* List("?", "!", ".")
+// ha  | ha   ha   ha
+// heh | heh  heh  heh
+// hmm | hmm  hmm  hmm
+//     |_______________
+//        ?    !    .
 
 
 // Other use case
@@ -27,7 +44,7 @@ option2 apWith none[(Int, Int) => Int]
 val double: Int => Int = _ * 2
 val plus: (Int, Int) => Int = _ + _
 val concat: (Int, String) => String = _ + _
-val repeat: (Int, String) => String = (n, s) => (0 to n).map(x => s).mkString("")
+val repeat: (Int, String) => String = (n, s) => (0 to n).map(_ => s).mkString("")
 
 // Apply Option[Function[T, X]] to Option[T]
 Apply[Option].ap(double.some)(1.some)
