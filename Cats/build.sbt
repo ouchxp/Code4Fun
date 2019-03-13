@@ -1,31 +1,33 @@
-val catsVersion = "0.7.2"
-val catsAll = "org.typelevel" %% "cats" % catsVersion
-val macroParaside = compilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)
-val kindProjector = compilerPlugin("org.spire-math" %% "kind-projector" % "0.6.3")
-val resetAllAttrs = "org.scalamacros" %% "resetallattrs" % "1.0.0"
+val macroParadise = compilerPlugin("org.scalamacros" % "paradise" % "2.1.0" cross CrossVersion.full)
 
-val specs2Version = "3.7.3" // use the version used by discipline
-val specs2Core  = "org.specs2" %% "specs2-core" % specs2Version
-val specs2Scalacheck = "org.specs2" %% "specs2-scalacheck" % specs2Version
-val scalacheck = "org.scalacheck" %% "scalacheck" % "1.12.4"
 
-lazy val root = (project in file(".")).
+val commonSettings = Seq(
+  scalaVersion := "2.12.8",
+  scalacOptions ++= Seq("-deprecation", "-feature"),
+  libraryDependencies ++= Seq(
+    "org.scala-lang" % "scala-reflect" % scalaVersion.value,
+    "org.scala-lang.modules" %% "scala-parser-combinators" % "1.1.1"
+  )
+)
+
+lazy val macros    = project.in(file("macros")).settings(commonSettings : _*)
+lazy val cats = (project in file("cats")).
   settings(
     organization := "me.ouchxp",
     name := "Cats",
     version := "1.0",
-    scalaVersion := "2.11.8",
-
+    scalaVersion := "2.12.8",
     libraryDependencies ++= Seq(
-      catsAll,
-      specs2Core % Test, specs2Scalacheck % Test, scalacheck % Test,
-      macroParaside, kindProjector, resetAllAttrs
+      "com.github.mpilquist" %% "simulacrum" % "0.15.0",
+      "org.typelevel" %% "cats-core" % "1.6.0",
+      "com.softwaremill.scalamacrodebug" %% "macros" % "0.4.1",
+      macroParadise,
     ),
-
     scalacOptions ++= Seq(
       "-deprecation",
       "-encoding", "UTF-8",
       "-feature",
-      "-language:_"
+      "-language:_",
+      "-Xlog-free-terms"
     )
-  )
+  ).dependsOn(macros)

@@ -18,5 +18,6 @@ case class Car(model: String)
 // Use implicit to add show function to type
 // there are two ways of adding show, use Show.fromToString or Show.show
 // implicit val carShow = Show.fromToString[Car]
-implicit val carShow = Show.show[Car](_.model)
+implicit val carShow: Show[Car] = Show.show[Car](_.model)
+
 Car("CR-V").show

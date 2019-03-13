@@ -1,5 +1,4 @@
 import cats.implicits._
-import cats.PartialOrder.tryCompare
 
 // implicit conversions for common types are defined in cats.std.all._
 1 tryCompare 2
