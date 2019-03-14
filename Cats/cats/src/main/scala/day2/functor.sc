@@ -1,5 +1,6 @@
 import cats.Functor
 import cats.implicits._
+import me.ouchxp.tool.PrintExpr._
 
 // Cats' Functor can turn something not a functor to functor
 // By adding map function
@@ -11,7 +12,7 @@ Functor[List].map(List(1, 2, 3)) { _ + 1 }
 // Right projection as `Right` value
 // In this case map only works on right
 val left: Either[String, Int] = Left("boom!")
-// Either does not have map function by default.
+// Either does not have map function by default (that has changed since scala 2.12).
 // Here the map function is introduced by cats
 left map { _ + 1 }
 val right: Either[String, Int] = Right(1)
@@ -24,5 +25,5 @@ lifted(List(1, 2, 3))
 // Some other functions from Functor
 List(1, 2, 3).void
 List(1, 2, 3) fproduct {(_: Int) * 2}
-List(1, 2, 3) as "x"
+printExpr(List(1, 2, 3) as "x")
 

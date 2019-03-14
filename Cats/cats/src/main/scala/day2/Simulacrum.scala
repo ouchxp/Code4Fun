@@ -17,18 +17,10 @@ object Simulacrum extends App {
     def truthy(a: A): Boolean
   }
 
-  object CanTruthy {
-    def fromTruthy[A](f: A => Boolean): CanTruthy[A] = (a: A) => f(a)
-  }
-
   // According to the README https://github.com/mpilquist/simulacrum
   // the macro will generate all the operator enrichment stuff like comment below
   /**
     * // This is the supposed generated code. You don't have to write it! ??????Really??????
-    * object CanTruthy {
-    * def fromTruthy[A](f: A => Boolean): CanTruthy[A] = new CanTruthy[A] {
-    * def truthy(a: A): Boolean = f(a)
-    * }
     * *
     * def apply[A](implicit instance: CanTruthy[A]): CanTruthy[A] = instance
     * *
@@ -58,8 +50,8 @@ object Simulacrum extends App {
     * }
     */
 
-  implicit val intCanTruthy: CanTruthy[Int] = CanTruthy.fromTruthy(_ != 0)
-  implicit val stringCanTruthy: CanTruthy[String] = CanTruthy.fromTruthy(Option(_).exists(_ != ""))
+  implicit val intCanTruthy: CanTruthy[Int] = _ != 0
+  implicit val stringCanTruthy: CanTruthy[String] = Option(_).exists(_ != "")
 
   import CanTruthy.ops._
 
@@ -82,17 +74,13 @@ object Simulacrum extends App {
 
 
 object SimulacrumSymbolic extends App {
-
-  @typeclass trait Appendable[A] {
-    @op("~") def append(x: A, y: A): A
+  import simulacrum.{op, typeclass}
+  @typeclass trait Add[A] {
+    @op("$") def append(x: A, y: A): A
   }
+  import Add.ops._
+  implicit val addInt: Add[Int] = _ + _
 
-  implicit val appendInt: Appendable[Int] = (x: Int, y: Int) => x + y
-
-  import Appendable.ops._
-
-  1 ~ 2 // 3
-
-  printExpr(1 ~ 2)
-
+  1 $ 2 // 3
+  printExpr(1 $ 2)
 }
