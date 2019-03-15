@@ -23,3 +23,7 @@ object Json {
 }
 import JsonWriterInstances._
 Json.toJson(Person("foo", "foo@bar.com"))
+
+import me.ouchxp.tool.PrintExpr._
+printExpr(List(123).sum)
+scala.math.Numeric.IntIsIntegral

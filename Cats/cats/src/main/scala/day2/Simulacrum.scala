@@ -7,8 +7,6 @@ import scala.language.postfixOps
 
 object Simulacrum extends App {
 
-  import simulacrum.{op, typeclass}
-
   // Entering paste mode (ctrl-D to finish)
   @typeclass trait CanTruthy[A] {
     self =>
@@ -74,7 +72,6 @@ object Simulacrum extends App {
 
 
 object SimulacrumSymbolic extends App {
-  import simulacrum.{op, typeclass}
   @typeclass trait Add[A] {
     @op("$") def append(x: A, y: A): A
   }
@@ -83,4 +80,22 @@ object SimulacrumSymbolic extends App {
 
   1 $ 2 // 3
   printExpr(1 $ 2)
+}
+
+object Writer extends App {
+
+  val numbers = Seq[Int](1, 2, 3)
+  val strings = Seq[String]("a", "b", "c")
+
+  @typeclass trait SeqWriter[T <: Seq[_]] {
+    def write(a: T): Unit
+  }
+
+  implicit val intWriter: SeqWriter[Seq[Int]] = x => println(x.sum)
+  implicit val stringWriter: SeqWriter[Seq[String]] = x => println(x.mkString("|"))
+  import SeqWriter.ops._
+  numbers.write
+  strings.write
+
+  printExpr(strings.write)
 }
