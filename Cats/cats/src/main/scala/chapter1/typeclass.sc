@@ -20,6 +20,8 @@ object JsonWriterInstances {
 
 object Json {
   def toJson[A](value: A)(implicit w: JsonWriter[A]): Json = w.write(value)
+  // equivalent context bound + implicitly syntax
+  // def toJson[A: JsonWriter](value: A): Json = implicitly[JsonWriter[A]].write(value)
 }
 import JsonWriterInstances._
 Json.toJson(Person("foo", "foo@bar.com"))
