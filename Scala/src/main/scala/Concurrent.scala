@@ -3,6 +3,7 @@ import scala.concurrent.{Await, Future, Promise}
 import scala.concurrent.duration._
 import scala.util.{Failure, Success, Try}
 import scala.async.Async._
+import scala.language.postfixOps
 object Concurrent extends App {
 
   val future = async {

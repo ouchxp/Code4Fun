@@ -1,5 +1,5 @@
 import scala.collection.SortedSet
-import scala.collection.mutable.{HashMap, SynchronizedMap}
+import scala.collection.mutable.HashMap
 
 object Collections extends App {
   /**
@@ -24,8 +24,8 @@ object Collections extends App {
   val arr = Array("a", "b", "c")
   arr(0) = "g" // another way of using update method
 
-  // Use java concurrentHashMap instead
-  new HashMap[String, String] with SynchronizedMap[String, String]
+  // @deprecated Use java concurrentHashMap instead
+  // new HashMap[String, String] with SynchronizedMap[String, String]
 
   // Cons operation is call by name so steam will not evaluate until use
   val stream = 1 #:: { println("get2"); 2 } #:: Stream.empty

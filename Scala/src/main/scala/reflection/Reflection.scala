@@ -1,5 +1,7 @@
 package reflection
 
+import scala.language.postfixOps
+
 
 object TestReflection extends App {
   import scala.reflect._

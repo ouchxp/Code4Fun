@@ -9,7 +9,7 @@ object TestActor extends App {
     def receive = LoggingReceive {
       case ObjectMessage(who) => println("Hello " + who)
       case "kill" =>
-        println("killing..."); /* context.stop(self);*/ system.shutdown(); println("killed!")
+        println("killing..."); /* context.stop(self);*/ system.terminate(); println("killed!")
       case i: Int => Thread.sleep(i)
       case x: String => println(x)
     }

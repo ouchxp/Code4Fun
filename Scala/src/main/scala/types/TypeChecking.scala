@@ -1,5 +1,7 @@
 import scala.reflect._
 import scala.reflect.runtime.universe._
+import scala.language.postfixOps
+
 object TestTypeChecking extends App {
 
   def macthGeneric[A](lst: List[A]) = lst match {
