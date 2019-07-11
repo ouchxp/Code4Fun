@@ -1,5 +1,6 @@
 import cats.Show
 import cats.implicits._
+import cats.Semigroup
 
 { // cats provides some predefined implicits for show types
   // usually use import cats.implicits._ to import them all
@@ -21,3 +22,14 @@ case class Car(model: String)
 implicit val carShow: Show[Car] = Show.show[Car](_.model)
 
 Car("CR-V").show
+
+
+Semigroup[Int].combine(1, 2)
+Semigroup[List[Int]].combine(List(1, 2, 3), List(4, 5, 6))
+Semigroup[Option[Int]].combine(Option(1), Option(2))
+Semigroup[Option[Int]].combine(Option(1), None)
+Semigroup[Int => Int].combine(_ + 1, _ * 10).apply(6)
+
+val aMap = Map("foo" -> Map("bar" -> 5))
+val anotherMap = Map("foo" -> Map("bar" -> 6))
+val combinedMap = Semigroup[Map[String, Map[String, Int]]].combine(aMap, anotherMap).get("foo")
