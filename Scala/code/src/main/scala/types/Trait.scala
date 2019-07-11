@@ -1,3 +1,5 @@
+package types
+
 object TestTrait extends App {
   trait A {
     def m1 = println("m1 called")

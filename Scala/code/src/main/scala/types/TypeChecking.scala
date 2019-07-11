@@ -1,3 +1,5 @@
+package types
+
 import scala.reflect._
 import scala.reflect.runtime.universe._
 import scala.language.postfixOps

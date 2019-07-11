@@ -1,4 +1,5 @@
-package chapter1
+package cats.chapter1
+
 import me.ouchxp.tool.PrintExpr._
 
 object Typeclass extends App {

@@ -1,4 +1,4 @@
-package day2
+package cats.day2
 
 import me.ouchxp.tool.PrintExpr._
 import simulacrum.{op, typeclass}

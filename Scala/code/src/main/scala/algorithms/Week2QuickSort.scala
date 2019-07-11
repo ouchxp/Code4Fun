@@ -1,6 +1,5 @@
 package algorithms
 
-
 import scala.io.Source
 
 object Week2QuickSort extends App {
