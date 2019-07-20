@@ -26,7 +26,7 @@ object IntersectionType extends App {
     println(x.values)
 }
 
-// type List[A] & List[B] is List[A & B]
+// type List[A] & List[B] is List[A & B] because List is covariant.
 val x: List[A] & List[B] = List[A & B]()
 trait A {
   def children: List[A]
