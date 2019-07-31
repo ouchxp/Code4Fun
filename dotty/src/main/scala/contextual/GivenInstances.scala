@@ -46,7 +46,7 @@ object GivenInstances extends App  {
   // Anonymous Given Clauses
   // as long as something can be given in scope, it can be implicitly passed down
   def max[T](x: T, y: T, z: T) given (ord: Ord[T]): T =
-    max(max(x,y), max(y,z))
+    max(max(x,y), max(y,z)) /*given ord*/
 
   println(max(1,2,3))
 
@@ -55,8 +55,18 @@ object GivenInstances extends App  {
     def compare(x: T, y: T) = asc.compare(y, x)
   }
 
+  // not naming the given instance in function signature
+  // but explicitly provide given instance
   def min[T](x: T, y: T) given Ord[T] =
     max(x, y) given descending
 
   println(min(1,2))
+
+  // not naming the given instance in function signature
+  // but use `the` function to summon the instance
+  def summoning[T](x: T) given Ord[T] = {
+    println(the[Ord[T]])
+    x
+  }
+  summoning(10)
 }
