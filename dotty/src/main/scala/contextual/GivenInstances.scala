@@ -1,29 +1,28 @@
-trait Ord[T] {
-  def compare(x: T, y: T): Int
-  def (x: T) < (y: T) = compare(x, y) < 0
-  def (x: T) > (y: T) = compare(x, y) > 0
-}
-
-given /*IntOrd*/ as Ord[Int] {
-  def compare(x: Int, y: Int) =
-    if (x < y) -1 else if (x > y) +1 else 0
-}
-
-// Given Instances could be named or anonymous i.e. ListOrd[T] vs just [T]
-given /*ListOrd*/[T] as Ord[List[T]] given (ord: Ord[T]) {
-  def compare(xs: List[T], ys: List[T]): Int = (xs, ys) match {
-    case (Nil, Nil) => 0
-    case (Nil, _) => -1
-    case (_, Nil) => +1
-    case (x :: xs1, y :: ys1) =>
-      val fst = ord.compare(x, y)
-      if (fst != 0) fst else compare(xs1, ys1)
-  }
-}
-
-case class DBConfig(url: String, user: String, password: String)
-
 object GivenInstances extends App  {
+  case class DBConfig(url: String, user: String, password: String)
+  trait Ord[T] {
+    def compare(x: T, y: T): Int
+    def (x: T) < (y: T) = compare(x, y) < 0
+    def (x: T) > (y: T) = compare(x, y) > 0
+  }
+
+  given /*IntOrd*/ as Ord[Int] {
+    def compare(x: Int, y: Int) =
+      if (x < y) -1 else if (x > y) +1 else 0
+  }
+
+  // Given Instances could be named or anonymous i.e. ListOrd[T] vs just [T]
+  given /*ListOrd*/[T] as Ord[List[T]] given (ord: Ord[T]) {
+    def compare(xs: List[T], ys: List[T]): Int = (xs, ys) match {
+      case (Nil, Nil) => 0
+      case (Nil, _) => -1
+      case (_, Nil) => +1
+      case (x :: xs1, y :: ys1) =>
+        val fst = ord.compare(x, y)
+        if (fst != 0) fst else compare(xs1, ys1)
+    }
+  }
+
   def f[T](l1: List[T], l2: List[T]) given (ord: Ord[List[T]]) = {
     ord.compare(l1, l2)
   }
