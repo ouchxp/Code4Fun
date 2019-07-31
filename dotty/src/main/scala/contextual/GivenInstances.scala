@@ -69,4 +69,9 @@ object GivenInstances extends App  {
     x
   }
   summoning(10)
+
+  // we can do the summoning because the `the` function is defined like this
+  // ``` def the[T] given (x: T): x.type = x ```
+  // this is exactly like `implicitly` in Scala2
+
 }
