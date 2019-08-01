@@ -1,9 +1,9 @@
-mod guessing;
-mod vec;
 mod array;
-mod typeclass;
+mod guessing;
 mod ownership;
 mod reference;
+mod typeclass;
+mod vec;
 
 fn main() {
     if false {
@@ -14,5 +14,4 @@ fn main() {
         ownership::test();
     }
     reference::test();
-
 }

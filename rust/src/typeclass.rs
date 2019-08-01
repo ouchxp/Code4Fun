@@ -1,7 +1,7 @@
 use std::ops::Add;
 
 struct A {
-    val: i32
+    val: i32,
 }
 
 pub fn test() {
@@ -12,7 +12,7 @@ pub fn test() {
     println!("{}", x.val);
 }
 
-fn add3<T: Add<T, Output=T>>(a: T, b: T, c: T) -> T {
+fn add3<T: Add<T, Output = T>>(a: T, b: T, c: T) -> T {
     return a + b + c;
 }
 
@@ -20,7 +20,8 @@ impl Add<A> for A {
     type Output = A;
 
     fn add(self, rhs: Self) -> Self::Output {
-        A { val: self.val + rhs.val }
+        A {
+            val: self.val + rhs.val,
+        }
     }
 }
-
