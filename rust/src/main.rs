@@ -2,6 +2,7 @@ mod array;
 mod guessing;
 mod ownership;
 mod reference;
+mod slice;
 mod typeclass;
 mod vec;
 
@@ -12,6 +13,7 @@ fn main() {
         array::array();
         typeclass::test();
         ownership::test();
+        reference::test();
     }
-    reference::test();
+    slice::test();
 }
