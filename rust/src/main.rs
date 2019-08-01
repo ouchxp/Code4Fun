@@ -3,6 +3,7 @@ mod vec;
 mod array;
 mod typeclass;
 mod ownership;
+mod reference;
 
 fn main() {
     if false {
@@ -10,7 +11,8 @@ fn main() {
         guessing::guessing();
         array::array();
         typeclass::test();
+        ownership::test();
     }
-    ownership::test();
+    reference::test();
 
 }
