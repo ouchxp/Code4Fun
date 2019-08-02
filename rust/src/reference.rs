@@ -31,3 +31,8 @@ fn no_dangle() -> String {
     let s = String::from("hello");
     s // give out the ownership, so that s is not getting dropped
 }
+
+// The Rules of References
+//
+// At any given time, you can have either one mutable reference or any number of immutable references.
+// References must always be valid.

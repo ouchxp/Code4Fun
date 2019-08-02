@@ -12,6 +12,15 @@ pub fn test() {
     let hello = &hw[..5]; // [0..5]
     let world = &hw[6..]; // [6..11]
     println!("{}, {}", hello, world);
+
+    // slice with mut string
+    let mut s1 = String::from("hello world");
+    let hello = &mut s1[..5];
+    println!("{}", hello);
+    // this does not work since s1 cannot be borrowed as both mutable an immutable
+    // or if we borrow it as mutable twice
+    // s1.insert(0, '?');
+    // println!("{}", hello);
 }
 fn first_word(s: &String) -> usize {
     let bytes = s.as_bytes();
