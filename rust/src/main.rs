@@ -3,6 +3,7 @@ mod guessing;
 mod ownership;
 mod reference;
 mod slice;
+mod structs;
 mod typeclass;
 mod vec;
 
@@ -14,6 +15,7 @@ fn main() {
         typeclass::test();
         ownership::test();
         reference::test();
+        slice::test();
     }
-    slice::test();
+    structs::test();
 }
