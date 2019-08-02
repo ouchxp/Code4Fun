@@ -1,4 +1,5 @@
 mod array;
+mod enums;
 mod guessing;
 mod ownership;
 mod reference;
@@ -16,6 +17,7 @@ fn main() {
         ownership::test();
         reference::test();
         slice::test();
+        structs::test();
     }
-    structs::test();
+    enums::test();
 }
