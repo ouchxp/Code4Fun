@@ -1,7 +1,7 @@
 object TestFunctions extends App {
 
   // Function
-  def f1(x: String) = x match {
+  def f1(x: String): Unit = x match {
     case "Good" => println("Feels Good!")
     case _ => println("No good")
   }
@@ -28,7 +28,7 @@ object TestFunctions extends App {
     case _ => println("No good"); "done";
   }
 
-  def higherOrderFun(f: Function[String, Object]) {
+  def higherOrderFun(f: Function[String, Object]) = {
     f("Good")
   }
 

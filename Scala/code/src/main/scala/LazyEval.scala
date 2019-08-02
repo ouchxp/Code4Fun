@@ -56,11 +56,11 @@ object LazyEval extends App {
 
   // ----------Call by name call by value arguments -----------
 
-  def callByName(x: => Int) {
+  def callByName(x: => Int): Unit = {
     println("callByName");
   }
 
-  def callByValue(x: Int) {
+  def callByValue(x: Int): Unit = {
     println("callByValue");
   }
   

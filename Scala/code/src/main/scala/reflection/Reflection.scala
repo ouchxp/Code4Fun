@@ -95,7 +95,7 @@ object TestReflection extends App {
   case class F(name: String) {
     private var x = 10
     private val y = 5
-    def greet(msg: String) {
+    def greet(msg: String): Unit = {
       println(msg + " " + name + " " + x + ", " + y)
     }
   }

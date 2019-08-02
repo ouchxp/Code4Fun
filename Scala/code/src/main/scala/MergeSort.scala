@@ -1,7 +1,7 @@
 
 
 object TestMergeSort extends App {
-  List(1, 2, 3, 4).filter { x => x > 2 }.foreach { println _ }
+  List(1, 2, 3, 4).filter { x => x > 2 }.foreach { println }
 
   val v = Vector(1, 3, 3, 5, 1, 0, 9, 2, 3, 4)
 
@@ -17,7 +17,8 @@ object TestMergeSort extends App {
     case (x, Vector()) => x
   }
 
-  def msort[T](less: (T, T) => Boolean)(xs: List[T]): List[T] = {
+  def mSort[T](less: (T, T) => Boolean)(xs: List[T]): List[T] = {
+    @scala.annotation.tailrec
     def merge(xs: List[T], ys: List[T], acc: List[T]): List[T] =
       (xs, ys) match {
         case (Nil, _) => ys.reverse ::: acc
@@ -30,9 +31,9 @@ object TestMergeSort extends App {
     if (n == 0) xs
     else {
       val (ys, zs) = xs splitAt n
-      merge(msort(less)(ys), msort(less)(zs), Nil).reverse
+      merge(mSort(less)(ys), mSort(less)(zs), Nil).reverse
     }
   }
 
-  val intSort = msort((_: Int) < (_: Int)) _
+  val intSort = mSort((_: Int) < (_: Int)) _
 }

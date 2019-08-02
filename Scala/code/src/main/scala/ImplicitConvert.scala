@@ -8,7 +8,7 @@ object TestImplicitConvertBoolean extends App {
 
   case class Bool(b: Boolean) {
     def ?[X](t: => X) = new {
-      def |(f: => X) = if (b) t else f
+      def |(f: => X): X = if (b) t else f
     }
   }
 
@@ -26,7 +26,7 @@ object TestImplicitConvertInt extends App {
   import scala.language.{implicitConversions, postfixOps}
 
   class Test(val a: Int) {
-    def threeTimes = a * 3
+    def threeTimes: Int = a * 3
   }
 
   implicit def IntToTest(e: Int): Test = new Test(e)

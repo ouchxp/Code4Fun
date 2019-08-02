@@ -6,7 +6,7 @@ object CallByValueOrName extends App {
   println("Print lz = " + lz + " The second time")
 
   // Call by name syntax sugar
-  // The actural argument is an clousure x which type is() => Int
+  // The actual argument is an closure x which type is() => Int
   def callByNameFun(x: => Int) = 10
   callByNameFun({ println(1); 1 })
 
@@ -15,7 +15,8 @@ object CallByValueOrName extends App {
   callByNameFun1(() => { println(1); 1 })
 
   // A while loop implemented based on call by name (essentially a Function0[A])
-  def WHILE(condition: => Boolean)(command: => Unit) {
+  @scala.annotation.tailrec
+  def WHILE(condition: => Boolean)(command: => Unit): Unit = {
     // If statement will evaluate the condition every time
     if (condition) {
       command

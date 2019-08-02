@@ -19,9 +19,9 @@ object TestActor extends App {
   val greeter = system.actorOf(Props[Receiver], name = "greeter")
   val GREETER_PATH = greeter.path.toString
 
-  def sayHello = {
+  def sayHello(): Unit = {
     val t = new Thread(new Runnable() {
-      def run() {
+      def run(): Unit = {
         Thread sleep 4000
         val as = system actorSelection GREETER_PATH
         as ! 3000
@@ -31,10 +31,10 @@ object TestActor extends App {
         as ! "kill"
       }
     })
-    t.start
+    t.start()
   }
 
-  sayHello
+  sayHello()
   (system actorSelection GREETER_PATH) ! ObjectMessage("Tom")
   println("main finished")
 }

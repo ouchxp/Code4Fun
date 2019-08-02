@@ -68,13 +68,12 @@ object Concurrent extends App {
   }
 
   val f3 = f2.recoverWith {
-    case t => {
+    case t =>
       println("f3 recover")
       Future {
-        println("f3-f2 recoverWith");
+        println("f3-f2 recoverWith")
         t.getMessage
       }
-    }
   }
 
   f2.onComplete {
@@ -147,9 +146,7 @@ object Concurrent extends App {
     val h = f fallbackTo g
 
     val z = f zip g
-    z.onComplete {
-      case t => println(t)
-    }
+    z.onComplete(t => println(t))
     Await.result(h, 5 seconds) // evaluates to 5
     Await.result(z, 5 seconds)
 
@@ -175,8 +172,8 @@ object Concurrent extends App {
 
   def race[T](left: Future[T], right: Future[T]): Future[T] = {
     val p = Promise[T]()
-    left onComplete { p.tryComplete(_) }
-    right onComplete { p.tryComplete(_) }
+    left onComplete { p.tryComplete }
+    right onComplete { p.tryComplete }
     p.future
   }
 

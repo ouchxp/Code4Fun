@@ -1,5 +1,4 @@
 import scala.collection.SortedSet
-import scala.collection.mutable.HashMap
 
 object Collections extends App {
   /**
@@ -28,7 +27,8 @@ object Collections extends App {
   // new HashMap[String, String] with SynchronizedMap[String, String]
 
   // Cons operation is call by name so steam will not evaluate until use
-  val stream = 1 #:: { println("get2"); 2 } #:: Stream.empty
+  // Stream has been deprecated and should use LazyList instead
+  val stream = 1 #:: { println("get2"); 2 } #:: LazyList.empty
   println(stream(0))
   println("nothing")
   println(stream(1))
@@ -39,10 +39,10 @@ object Collections extends App {
 
   // we can use pattern matching in for expression, to extract the element of case class object 
   case class MyString(s: String) {
-    def mkString = "My:" + s
+    def mkString: String = "My:" + s
   }
-  val myset: Set[MyString] = Set(MyString("good"), MyString("bad"))
-  val strSet: Set[String] = for (MyString(x) <- myset) yield x
+  val mySet: Set[MyString] = Set(MyString("good"), MyString("bad"))
+  val strSet: Set[String] = for (MyString(x) <- mySet) yield x
 
   /** 2 ways of implementing map function */
   // map function could does not generate a new value directly, but build a channel/pipe that suck the data through it and change it.
