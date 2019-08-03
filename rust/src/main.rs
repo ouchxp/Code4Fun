@@ -1,6 +1,7 @@
 mod array;
 mod enums;
 mod guessing;
+mod hashmap;
 mod module;
 mod ownership;
 mod reference;
@@ -22,6 +23,7 @@ fn main() {
         enums::test();
         module::test();
         vec::vec();
+        string::test();
     }
-    string::test();
+    hashmap::test();
 }
