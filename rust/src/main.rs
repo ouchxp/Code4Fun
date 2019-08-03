@@ -5,6 +5,7 @@ mod module;
 mod ownership;
 mod reference;
 mod slice;
+mod string;
 mod structs;
 mod typeclass;
 mod vec;
@@ -20,6 +21,7 @@ fn main() {
         structs::test();
         enums::test();
         module::test();
+        vec::vec();
     }
-    vec::vec();
+    string::test();
 }
