@@ -11,7 +11,6 @@ mod vec;
 
 fn main() {
     if false {
-        vec::vec();
         guessing::guessing();
         array::array();
         typeclass::test();
@@ -20,6 +19,7 @@ fn main() {
         slice::test();
         structs::test();
         enums::test();
+        module::test();
     }
-    module::test();
+    vec::vec();
 }
