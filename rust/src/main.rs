@@ -1,5 +1,6 @@
 mod array;
 mod enums;
+mod errors;
 mod guessing;
 mod hashmap;
 mod module;
@@ -24,6 +25,7 @@ fn main() {
         module::test();
         vec::vec();
         string::test();
+        hashmap::test();
     }
-    hashmap::test();
+    errors::test();
 }
