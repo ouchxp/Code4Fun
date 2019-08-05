@@ -10,6 +10,7 @@ mod reference;
 mod slice;
 mod string;
 mod structs;
+mod traits;
 mod typeclass;
 mod vec;
 
@@ -28,6 +29,7 @@ fn main() {
         string::test();
         hashmap::test();
         errors::test();
+        generics::test();
     }
-    generics::test();
+    traits::test();
 }
