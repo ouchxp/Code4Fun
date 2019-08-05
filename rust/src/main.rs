@@ -4,6 +4,7 @@ mod errors;
 mod generics;
 mod guessing;
 mod hashmap;
+mod lifetime;
 mod module;
 mod ownership;
 mod reference;
@@ -30,6 +31,8 @@ fn main() {
         hashmap::test();
         errors::test();
         generics::test();
+        traits::test();
     }
-    traits::test();
+
+    lifetime::test();
 }
