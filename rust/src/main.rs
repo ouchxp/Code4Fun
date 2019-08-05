@@ -1,6 +1,7 @@
 mod array;
 mod enums;
 mod errors;
+mod generics;
 mod guessing;
 mod hashmap;
 mod module;
@@ -26,6 +27,7 @@ fn main() {
         vec::vec();
         string::test();
         hashmap::test();
+        errors::test();
     }
-    errors::test();
+    generics::test();
 }
