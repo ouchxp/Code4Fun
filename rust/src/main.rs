@@ -11,6 +11,7 @@ mod reference;
 mod slice;
 mod string;
 mod structs;
+mod tests;
 mod traits;
 mod typeclass;
 mod vec;
@@ -32,7 +33,7 @@ fn main() {
         errors::test();
         generics::test();
         traits::test();
+        lifetime::test();
     }
-
-    lifetime::test();
+    println!("{}", tests::return_10());
 }
