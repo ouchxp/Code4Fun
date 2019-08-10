@@ -21,3 +21,33 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     println!("With text:\n{}", contents);
     Ok(())
 }
+
+pub fn search<'a>(query: &str, contents: &'a str) -> Vec<&'a str> {
+    vec![]
+}
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    #[test]
+    fn multiple_results() {
+        let query = "duck";
+        let contents = "\
+Rust:
+duck one
+duck two
+";
+        assert_eq!(search(query, contents), vec!["duck one", "duck two"]);
+    }
+
+    #[test]
+    fn one_result() {
+        let query = "duct";
+        let contents = "\
+Rust:
+safe, fast, productive.
+Pick three.";
+
+        assert_eq!(search(query, contents), vec!["safe, fast, productive."]);
+    }
+}
