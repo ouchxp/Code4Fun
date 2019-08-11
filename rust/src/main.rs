@@ -1,4 +1,5 @@
 mod array;
+mod closure;
 mod enums;
 mod errors;
 mod generics;
@@ -34,6 +35,7 @@ fn main() {
         generics::test();
         traits::test();
         lifetime::test();
+        tests::return_10();
     }
-    println!("{}", tests::return_10());
+    closure::test();
 }
