@@ -34,7 +34,7 @@ pub fn test() {
 
         // to get number of chars, use s1.chars().count()
         println!("{}", s1.chars().count());
-        let x: Vec<char> = s1.chars().collect();
+        let x: Vec<_> = s1.chars().collect();
         println!("{:?}", x);
     }
 
@@ -46,7 +46,7 @@ pub fn test() {
         // println!("{}", &s1[..2]);
 
         // we can do this to get a specific char
-        let x: Vec<char> = s1.chars().collect();
+        let x: Vec<_> = s1.chars().collect();
         println!("{:?}", x[0]);
     }
 }

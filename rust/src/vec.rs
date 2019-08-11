@@ -1,6 +1,6 @@
 pub fn vec() {
     let v = [1, 2, 3];
-    let mut m1: Vec<i32> = v.iter().map(|x| x + 1).collect();
+    let mut m1: Vec<_> = v.iter().map(|x| x + 1).collect();
     m1.push(5);
     println!("{:?}", m1);
 

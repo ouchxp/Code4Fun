@@ -5,6 +5,7 @@ mod errors;
 mod generics;
 mod guessing;
 mod hashmap;
+mod iterators;
 mod lifetime;
 mod module;
 mod ownership;
@@ -36,6 +37,7 @@ fn main() {
         traits::test();
         lifetime::test();
         tests::return_10();
+        closure::test();
     }
-    closure::test();
+    iterators::test();
 }
