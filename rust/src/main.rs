@@ -1,4 +1,5 @@
 mod array;
+mod box_type;
 mod closure;
 mod enums;
 mod errors;
@@ -38,6 +39,8 @@ fn main() {
         lifetime::test();
         tests::return_10();
         closure::test();
+        iterators::test();
     }
-    iterators::test();
+
+    box_type::test();
 }
