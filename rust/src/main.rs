@@ -7,6 +7,7 @@ mod generics;
 mod guessing;
 mod hashmap;
 mod iterators;
+mod json;
 mod lifetime;
 mod module;
 mod ownership;
@@ -40,7 +41,7 @@ fn main() {
         tests::return_10();
         closure::test();
         iterators::test();
+        box_type::test();
     }
-
-    box_type::test();
+    json::test();
 }
