@@ -1,12 +1,10 @@
 # Graal sbt-native-packager example
 
-
-## Run
-```make run```
-
 ## Build
 ```make build```
 
+## Run
+```make run```
 
 ## Build with docker
 add this line to build.sbt
