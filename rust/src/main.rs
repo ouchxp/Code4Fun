@@ -11,6 +11,7 @@ mod json;
 mod lifetime;
 mod module;
 mod ownership;
+mod print;
 mod reference;
 mod slice;
 mod string;
@@ -18,6 +19,8 @@ mod structs;
 mod tests;
 mod traits;
 mod typeclass;
+mod types;
+mod vars;
 mod vec;
 
 fn main() {
@@ -32,7 +35,6 @@ fn main() {
         enums::test();
         module::test();
         vec::vec();
-        string::test();
         hashmap::test();
         errors::test();
         generics::test();
@@ -42,6 +44,10 @@ fn main() {
         closure::test();
         iterators::test();
         box_type::test();
+        json::test();
+        print::print();
+        vars::run();
+        types::run();
     }
-    json::test();
+    string::test();
 }

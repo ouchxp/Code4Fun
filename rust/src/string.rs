@@ -49,4 +49,32 @@ pub fn test() {
         let x: Vec<_> = s1.chars().collect();
         println!("{:?}", x[0]);
     }
+    {
+        let mut s1 = String::from("Hello ");
+        // the line below does not work because it is str type, str is immutable
+        // let mut s1 = "Hello";
+        println!("length {}", s1.len());
+        // append a char
+        s1.push('W');
+        println!("s1: {}", s1);
+        // append a string
+        s1.push_str("orld");
+        println!("s1: {}", s1);
+        println!("Capacity: {}", s1.capacity());
+        println!("Is Empty: {}", s1.is_empty());
+        println!("Contains 'World': {}", s1.contains("World"));
+
+        // loop words
+        for word in s1.split_whitespace() {
+            println!("{}", word);
+        }
+
+        // create string with capacity
+        let mut s = String::with_capacity(10);
+        s.push_str("0123456789");
+        assert_eq!(s.capacity(), 10);
+        s.push_str("a");
+        // capacity doubled like ArrayList in Java
+        assert_eq!(s.capacity(), 20);
+    }
 }
