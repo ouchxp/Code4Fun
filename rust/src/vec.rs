@@ -17,11 +17,26 @@ pub fn vec() {
     for i in &v {
         println!("{}", i);
     }
+    // another for each
+    for i in v.iter() {
+        println!("{}", i);
+    }
 
     // in place update
     let mut v = vec![1, 2, 3];
-    for i in &mut v {
-        *i += 50;
+    for x in &mut v {
+        *x += 50;
     }
+    println!("{:?}", v);
+
+    // another way of in place update
+    let mut numbers = vec![1, 2, 3];
+    for x in numbers.iter_mut() {
+        *x += 50;
+    }
+    println!("numbers: {:?}", numbers);
+
+    // pop last element
+    v.pop();
     println!("{:?}", v);
 }

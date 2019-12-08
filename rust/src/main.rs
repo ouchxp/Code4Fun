@@ -49,7 +49,8 @@ fn main() {
         vars::run();
         types::run();
         string::test();
+        tuple::run();
+        array::array();
     }
-    tuple::run();
-    array::array();
+    vec::vec();
 }
