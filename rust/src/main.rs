@@ -18,6 +18,7 @@ mod string;
 mod structs;
 mod tests;
 mod traits;
+mod tuple;
 mod typeclass;
 mod types;
 mod vars;
@@ -26,7 +27,6 @@ mod vec;
 fn main() {
     if false {
         guessing::guessing();
-        array::array();
         typeclass::test();
         ownership::test();
         reference::test();
@@ -48,6 +48,8 @@ fn main() {
         print::print();
         vars::run();
         types::run();
+        string::test();
     }
-    string::test();
+    tuple::run();
+    array::array();
 }
