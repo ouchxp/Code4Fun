@@ -1,5 +1,6 @@
 mod array;
 mod box_type;
+mod cli;
 mod closure;
 mod enums;
 mod errors;
@@ -9,8 +10,10 @@ mod hashmap;
 mod iterators;
 mod json;
 mod lifetime;
+mod loops;
 mod module;
 mod ownership;
+mod pointer_ref;
 mod print;
 mod reference;
 mod slice;
@@ -51,6 +54,10 @@ fn main() {
         string::test();
         tuple::run();
         array::array();
+        vec::vec();
+        loops::run();
+
+        pointer_ref::run();
     }
-    vec::vec();
+    cli::run();
 }
