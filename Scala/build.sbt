@@ -2,7 +2,7 @@ name := "Scala"
 version := "1.0"
 
 val commonSettings = Seq(
-  scalaVersion := "2.13.0",
+  scalaVersion := "2.13.2",
   scalacOptions ++= Seq("-deprecation", "-feature"),
   libraryDependencies ++= Seq(
     "org.scala-lang" % "scala-reflect" % scalaVersion.value,
@@ -17,10 +17,10 @@ lazy val code = (project in file("code")).
     organization := "me.ouchxp",
     name := "code",
     version := "1.0",
-    scalaVersion := "2.13.0",
+    scalaVersion := "2.13.2",
     libraryDependencies ++= Seq(
       "org.scala-lang.modules" %% "scala-async" % "0.10.0",
-      "org.scala-lang" % "scala-reflect" % "2.13.0",
+      "org.scala-lang" % "scala-reflect" % "2.13.2",
       "com.typesafe.akka" %% "akka-actor" % "2.5.23",
       "com.github.mpilquist" %% "simulacrum" % "0.19.0",
       "org.typelevel" %% "cats-core" % "2.0.0-M4",
