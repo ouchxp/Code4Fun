@@ -6,13 +6,15 @@ object TestActor extends App {
   case class ObjectMessage(who: String)
   class Receiver extends Actor {
 
-    def receive = LoggingReceive {
-      case ObjectMessage(who) => println("Hello " + who)
-      case "kill" =>
-        println("killing..."); /* context.stop(self);*/ system.terminate(); println("killed!")
-      case i: Int => Thread.sleep(i)
-      case x: String => println(x)
-    }
+    def receive =
+      LoggingReceive {
+        case ObjectMessage(who) => println("Hello " + who)
+        case "kill" =>
+          println("killing..."); /* context.stop(self);*/
+          system.terminate(); println("killed!")
+        case i: Int    => Thread.sleep(i)
+        case x: String => println(x)
+      }
   }
 
   val system = ActorSystem create "MySystem"
@@ -38,4 +40,3 @@ object TestActor extends App {
   (system actorSelection GREETER_PATH) ! ObjectMessage("Tom")
   println("main finished")
 }
-

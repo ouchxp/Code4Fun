@@ -12,7 +12,10 @@ object TestOption extends App {
   val options = List(Some(1), Some(2), None, Some(3), None, Some(4))
   val res = options flatMap {
     //x => x flatMap { x => if (x % 2 == 0) Some(x) else None } // filter implementation
-    x => x.filter { x => x % 2 == 0 } // we get None, Some(2), None, None, None and Some(4) here
+    x =>
+      x.filter { x =>
+        x % 2 == 0
+      } // we get None, Some(2), None, None, None and Some(4) here
   } // None plus m = m
   println(options flatMap { x => x })
   println(res)
@@ -36,7 +39,6 @@ object TestOption extends App {
     //def getVersion() = "V1.0"
   }
 
-  import scala.language.postfixOps
   val version = SysUtil.getCoumputer
     .flatMap { _ getSoundCard }
     .flatMap { _ getUSB }

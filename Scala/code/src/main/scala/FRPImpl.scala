@@ -13,7 +13,8 @@ object FRPImpl extends App {
 
       def map[R](f: T => R): PulledSignal[R] = new PulledSignal[R](f(this()))
 
-      override def toString: String = "PulledSignal(" + String.valueOf(apply()) + ")"
+      override def toString: String =
+        "PulledSignal(" + String.valueOf(apply()) + ")"
     }
 
     class PulledVar[T](e: => T) extends PulledSignal[T](e) {
@@ -30,7 +31,5 @@ object FRPImpl extends App {
 
   println("----------------------------------")
 
-  {
-    
-  }
+  {}
 }

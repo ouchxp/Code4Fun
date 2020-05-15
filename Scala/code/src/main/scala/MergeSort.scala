@@ -1,5 +1,3 @@
-
-
 object TestMergeSort extends App {
   List(1, 2, 3, 4).filter { x => x > 2 }.foreach { println }
 
@@ -11,11 +9,14 @@ object TestMergeSort extends App {
     return merge(sort(v1), sort(v2))
   }
 
-  def merge(v1: Vector[Int], v2: Vector[Int]): Vector[Int] = (v1, v2) match {
-    case (x +: xs, y +: ys) => if (x < y) { x +: merge(xs, v2) } else { y +: merge(v1, ys) }
-    case (Vector(), x) => x
-    case (x, Vector()) => x
-  }
+  def merge(v1: Vector[Int], v2: Vector[Int]): Vector[Int] =
+    (v1, v2) match {
+      case (x +: xs, y +: ys) =>
+        if (x < y) { x +: merge(xs, v2) }
+        else { y +: merge(v1, ys) }
+      case (Vector(), x) => x
+      case (x, Vector()) => x
+    }
 
   def mSort[T](less: (T, T) => Boolean)(xs: List[T]): List[T] = {
     @scala.annotation.tailrec

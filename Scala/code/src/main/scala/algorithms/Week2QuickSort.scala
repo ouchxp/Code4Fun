@@ -3,7 +3,11 @@ package algorithms
 import scala.io.Source
 
 object Week2QuickSort extends App {
-  val srcArr = Source.fromFile("QuickSort.txt", "UTF-8").getLines().map { x => x.toInt}.toArray
+  val srcArr = Source
+    .fromFile("QuickSort.txt", "UTF-8")
+    .getLines()
+    .map { x => x.toInt }
+    .toArray
   var compareCount: Long = 0
 
   def qsort(partition: (Array[Int], Int, Int) => Int)(arr: Array[Int]): Unit = {
@@ -46,7 +50,7 @@ object Week2QuickSort extends App {
 
   def middle(lo: Int, hi: Int) = {
     val len = hi - lo + 1
-    lo + (len / 2) - (if(len % 2 == 0) 1 else 0)
+    lo + (len / 2) - (if (len % 2 == 0) 1 else 0)
   }
 
   def medianOfThree(arr: Array[Int], lo: Int, hi: Int): Int = {

@@ -40,6 +40,7 @@ object LazyEval extends App {
   f1lazy(lazystr)
 
   def f2lazy(arg: => Future[String]) = {
+
     /** This will evaluate args 3 times immediately */
     //List(1,2,3).map { x => () => arg }
 
@@ -63,8 +64,7 @@ object LazyEval extends App {
   def callByValue(x: Int): Unit = {
     println("callByValue");
   }
-  
-  
+
   callByValue({ println("evaluating..."); 1 })
   callByName({ println("evaluating..."); 1 })
 }

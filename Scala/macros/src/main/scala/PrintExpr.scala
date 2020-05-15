@@ -5,7 +5,7 @@ import scala.reflect.macros.blackbox
 
 object PrintExpr {
   def printExpr(expr: Any): Unit =
-  macro printExprMacro
+    macro printExprMacro
 
   def printExprMacro(c: blackbox.Context)(expr: c.Tree): c.universe.Tree = {
     import c.universe._
@@ -13,4 +13,3 @@ object PrintExpr {
     q"""println($code  + " -> " + $expr)"""
   }
 }
-

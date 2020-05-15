@@ -5,7 +5,8 @@ sealed trait WorldState { def nextState: WorldState }
 // V1 /////////////////////////////////////
 object RTConsole_v1 {
   def getString(state: WorldState) = (state.nextState, StdIn.readLine)
-  def putString(state: WorldState, s: String) = (state.nextState, Console.print(s))
+  def putString(state: WorldState, s: String) =
+    (state.nextState, Console.print(s))
 }
 
 abstract class IOApplication_v1 {
@@ -27,9 +28,7 @@ object HelloWorld_v1 extends IOApplication_v1 {
 // break property 3
 object Evil_v1 extends IOApplication_v1 {
   import RTConsole_v1._
-  def iomain(
-    args: Array[String],
-    startState: WorldState) = {
+  def iomain(args: Array[String], startState: WorldState) = {
     val (stateA, a) = getString(startState)
     val (stateB, b) = getString(startState)
     assert(a == b)
@@ -40,7 +39,9 @@ object Evil_v1 extends IOApplication_v1 {
 // V2 /////////////////////////////////////
 object RTConsole_v2 {
   def getString = { state: WorldState => (state.nextState, StdIn.readLine) }
-  def putString(s: String) = { state: WorldState => (state.nextState, Console.print(s)) }
+  def putString(s: String) = { state: WorldState =>
+    (state.nextState, Console.print(s))
+  }
 }
 
 //sealed trait WorldState { def nextState: WorldState }
@@ -57,7 +58,7 @@ abstract class IOApplication_v2 {
   def iomain(args: Array[String]): (WorldState => (WorldState, _))
 }
 
-//file HelloWorld.scala  
+//file HelloWorld.scala
 object HelloWorld_v2 extends IOApplication_v2 {
   import RTConsole_v2._
   def iomain(args: Array[String]) =
@@ -67,14 +68,13 @@ object HelloWorld_v2 extends IOApplication_v2 {
 // Break property 3
 object Evil_v2 extends IOApplication_v2 {
   import RTConsole_v2._
-  def iomain(args: Array[String]) = {
-    (startState: WorldState) =>
-      {
-        val (statea, a) = getString(startState)
-        val (stateb, b) = getString(startState)
-        assert(a == b)
-        (startState, b)
-      }
+  def iomain(args: Array[String]) = { (startState: WorldState) =>
+    {
+      val (statea, a) = getString(startState)
+      val (stateb, b) = getString(startState)
+      assert(a == b)
+      (startState, b)
+    }
   }
 }
 
@@ -88,7 +88,7 @@ object IOAction_v3 {
   }
 }
 
-//sealed trait WorldState{def nextState:WorldState}  
+//sealed trait WorldState{def nextState:WorldState}
 abstract class IOApplication_v3 {
   private class WorldStateImpl(id: BigInt) extends WorldState {
     def nextState = new WorldStateImpl(id + 1)
@@ -100,7 +100,7 @@ abstract class IOApplication_v3 {
   def iomain(args: Array[String]): IOAction_v3[_]
 }
 
-//file RTConsole.scala  
+//file RTConsole.scala
 object RTConsole_v3 {
   def getString = IOAction_v3(StdIn.readLine)
   def putString(s: String) = IOAction_v3(Console.print(s))
@@ -114,11 +114,16 @@ object HelloWorld_v3 extends IOApplication_v3 {
 }
 
 // V4////////////////////////////////////////
-sealed abstract class IOAction_v4[+A] extends Function1[WorldState, (WorldState, A)] {
+sealed abstract class IOAction_v4[+A]
+    extends Function1[WorldState, (WorldState, A)] {
   def map[B](f: A => B): IOAction_v4[B] = flatMap { x => IOAction_v4(f(x)) }
-  def flatMap[B](f: A => IOAction_v4[B]): IOAction_v4[B] = new ChainedAction(this, f)
+  def flatMap[B](f: A => IOAction_v4[B]): IOAction_v4[B] =
+    new ChainedAction(this, f)
 
-  private class ChainedAction[+A, B](action1: IOAction_v4[B], f: B => IOAction_v4[A]) extends IOAction_v4[A] {
+  private class ChainedAction[+A, B](
+      action1: IOAction_v4[B],
+      f: B => IOAction_v4[A]
+  ) extends IOAction_v4[A] {
     def apply(state1: WorldState) = {
       val (state2, intermediateResult) = action1(state1);
       val action2 = f(intermediateResult)
@@ -157,8 +162,7 @@ object HelloWorld_v4 extends IOApplication_v4 {
 //    .flatMap { _ => putString("What's your name?") }
 //    .flatMap { _ => getString }
 //    .flatMap { name => putString("Hello " + name) }
-    
-    
+
     for {
       _ <- putString("This is an example of the IO monad.")
       _ <- putString("What's your name?")
@@ -167,5 +171,3 @@ object HelloWorld_v4 extends IOApplication_v4 {
     } yield ()
   }
 }
-
-

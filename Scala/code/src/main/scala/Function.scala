@@ -1,31 +1,34 @@
 object TestFunctions extends App {
 
   // Function
-  def f1(x: String): Unit = x match {
-    case "Good" => println("Feels Good!")
-    case _ => println("No good")
-  }
+  def f1(x: String): Unit =
+    x match {
+      case "Good" => println("Feels Good!")
+      case _      => println("No good")
+    }
 
-  val f2 = (x: String) => x match {
-    case "Good" => println("Feels Good!")
-    case _ => println("No good")
-  }
+  val f2 = (x: String) =>
+    x match {
+      case "Good" => println("Feels Good!")
+      case _      => println("No good")
+    }
 
   //use function can omit the match keyword
   val f3: Function[String, Unit] = {
     case "Good" => println("Feels Good!")
-    case _ => println("No good")
+    case _      => println("No good")
   }
 
+  // partial function does not catch all the cases
   val pf1: PartialFunction[String, Unit] = {
     case "Good" => println("Feels Good!")
-    case "bad" => println("No good")
+    case "bad"  => println("No good")
   }
   //----------------------------------------------
 
   val f4: Function[Object, String] = {
     case "Good" => println("Feels Good!"); "done";
-    case _ => println("No good"); "done";
+    case _      => println("No good"); "done";
   }
 
   def higherOrderFun(f: Function[String, Object]) = {
@@ -33,38 +36,39 @@ object TestFunctions extends App {
   }
 
   /**
-   * higherOrderFun can accept Function[Object, String]
-   * it means Function[Object, String] <(is subclass of) Function[String, Object]
-   * So in function, argument type is contravariant, and return type is covariant
-   * The definition of Function class should be Function[-A, +B]
-   */
+    * higherOrderFun can accept Function[Object, String]
+    * it means Function[Object, String] <(is subclass of) Function[String, Object]
+    * So in function, argument type is contravariant, and return type is covariant
+    * The definition of Function class should be Function[-A, +B]
+    */
   higherOrderFun(f4)
 
   /**
-   * PartialFunction (是指定义域X中可能存在某些值在值域Y中没有对应的值) is a function that
-   * does not handle every input (incomplete), so we can test the definition domain
-   * by calling isDefinedAt method
-   * *************************
-   * PartialFunction is not Partial application function
-   * partial application is wrap a function with a default argument and _ etc.
-   * *************************
-   *
+    * PartialFunction (是指定义域X中可能存在某些值在值域Y中没有对应的值) is a function that
+    * does not handle every input (incomplete), so we can test the definition domain
+    * by calling isDefinedAt method
+    * *************************
+    * PartialFunction is not Partial application function
+    * partial application is wrap a function with a default argument and _ etc.
+    * *************************
+    *
    */
   println(pf1.isDefinedAt("worse"))
-  
+
   // Seq or List are partial function because it matchs the definition
   // Set is not because set does not have index
-  val pfs: PartialFunction[Int,Int] = List(1,2,3) 
+  val pfs: PartialFunction[Int, Int] = List(1, 2, 3)
   println(pfs.isDefinedAt(4))
 
   val pf2: PartialFunction[String, String] = {
     case "Good" => "Feels Good!"
-    case "bad" => "No good"
+    case "bad"  => "No good"
   }
+
   /**
-   * We can use lift method to convert the PartialFunction to a normal function
-   * which return an Option type as result
-   */
+    * We can use lift method to convert the PartialFunction to a normal function
+    * which return an Option type as result
+    */
   println(pf2.lift("Good"))
   println(pf2.lift("worse"))
 
@@ -72,9 +76,9 @@ object TestFunctions extends App {
   println(f5(3, 4))
 
   /**
-   * Here comes the partial application
-   * Specify the parameter type is required here
-   */
+    * Here comes the partial application
+    * Specify the parameter type is required here
+    */
   val f6 = f5(_: Int, 1)
-  
+
 }

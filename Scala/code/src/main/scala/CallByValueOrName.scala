@@ -7,12 +7,13 @@ object CallByValueOrName extends App {
 
   // Call by name syntax sugar
   // The actual argument is an closure x which type is() => Int
-  def callByNameFun(x: => Int) = 10
-  callByNameFun({ println(1); 1 })
+  def callByNameFun(x: => Int): Unit = println(s"callByNameFun result: $x")
+  callByNameFun({ println("evaluating"); 1 })
 
   // Equals to (no sugar for val declaration)
-  val callByNameFun1 = (x: () => Int) => 10
-  callByNameFun1(() => { println(1); 1 })
+  val callByNameFun1 = (x: () => Int) =>
+    println(s"callByNameFun1 result: ${x()}")
+  callByNameFun1(() => { println("evaluating"); 1 })
 
   // A while loop implemented based on call by name (essentially a Function0[A])
   @scala.annotation.tailrec

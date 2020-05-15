@@ -3,8 +3,6 @@ package cats.day2
 import me.ouchxp.tool.PrintExpr._
 import simulacrum.{op, typeclass}
 
-import scala.language.postfixOps
-
 object Simulacrum extends App {
 
   // Entering paste mode (ctrl-D to finish)
@@ -56,10 +54,12 @@ object Simulacrum extends App {
   val a = 10 truthy
   val b = 0 truthy
 
-  println(Map(
-    "'10 truthy'" -> (10 truthy),
-    "'0 truthy'" -> (0 truthy)
-  ))
+  println(
+    Map(
+      "'10 truthy'" -> (10 truthy),
+      "'0 truthy'" -> (0 truthy)
+    )
+  )
 
   printExpr(10 truthy)
   printExpr("Good" truthy)
@@ -67,9 +67,7 @@ object Simulacrum extends App {
   val n: String = null
   printExpr(n truthy)
 
-
 }
-
 
 object SimulacrumSymbolic extends App {
   @typeclass trait Add[A] {
@@ -92,7 +90,8 @@ object Writer extends App {
   }
 
   implicit val intWriter: SeqWriter[Seq[Int]] = x => println(x.sum)
-  implicit val stringWriter: SeqWriter[Seq[String]] = x => println(x.mkString("|"))
+  implicit val stringWriter: SeqWriter[Seq[String]] = x =>
+    println(x.mkString("|"))
   import SeqWriter.ops._
   numbers.write
   strings.write

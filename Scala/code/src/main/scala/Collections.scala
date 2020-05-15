@@ -1,14 +1,15 @@
 import scala.collection.SortedSet
 
 object Collections extends App {
+
   /**
-   *  Normally class extends from IndexedSeq is optimized for Random access such as Array
-   *  class extends from LinerSeq is optimized for liner access (head, tail, like linked list in java)
-   *  But Vector class is optimized on both random access and liner access.
-   *  Questions:
-   *  why? how? vector able to do that.
-   *  What's the difference between IndexedSeqOptimized and IndexedSeq ???
-   */
+    *  Normally class extends from IndexedSeq is optimized for Random access such as Array
+    *  class extends from LinerSeq is optimized for liner access (head, tail, like linked list in java)
+    *  But Vector class is optimized on both random access and liner access.
+    *  Questions:
+    *  why? how? vector able to do that.
+    *  What's the difference between IndexedSeqOptimized and IndexedSeq ???
+    */
 
   /** Set's apply method is same as contains */
   val set = Set("good", "bad")
@@ -37,7 +38,7 @@ object Collections extends App {
   println(IndexedSeq(1, 2, 3)) //IndexedSeq default is Vector
   println(SortedSet(1, 2, 3)) //TreeSet (red black tree)
 
-  // we can use pattern matching in for expression, to extract the element of case class object 
+  // we can use pattern matching in for expression, to extract the element of case class object
   case class MyString(s: String) {
     def mkString: String = "My:" + s
   }
@@ -52,6 +53,8 @@ object Collections extends App {
   val mappedArr = mutableArr.map { x => x + "x" }
   mutableArr(0) = "100"
   println(mutableArr(0))
-  println(mappedArr(0)) // If it was building pipe (does not generate the data immediately), this would be 100x.
+  println(
+    mappedArr(0)
+  ) // If it was building pipe (does not generate the data immediately), this would be 100x.
 
 }

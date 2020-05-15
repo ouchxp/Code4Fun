@@ -3,7 +3,6 @@ import scala.concurrent.{Await, Future, Promise}
 import scala.concurrent.duration._
 import scala.util.{Failure, Success, Try}
 import scala.async.Async._
-import scala.language.postfixOps
 object Concurrent extends App {
 
   val future = async {
@@ -12,7 +11,7 @@ object Concurrent extends App {
     if (await(f1)) await(f2) else 0
   }
 
-  val ffs:Future[String] = Future {throw new Exception()}
+  val ffs: Future[String] = Future { throw new Exception() }
   val ffs2 = ffs.filter(x => x.length() > 1)
   ffs2.onComplete { x => println(x) }
 
@@ -103,11 +102,11 @@ object Concurrent extends App {
     }
   }
 
-  // fallbackto method is not lazy evaluate, so the two futures will run in parallel
+  // fallback to method is not lazy evaluate, so the two futures will run in parallel
   // Not one after another failed
   badRetry(10) {
     Future {
-      println("badretry trying")
+      println("badRetry trying")
       anotherExpensiveComputation("fffr")
     }
   }.onComplete {
@@ -120,9 +119,11 @@ object Concurrent extends App {
     val attempts = (1 to times).map(_ => () => block)
     val failed = Future.failed[String](new Exception)
     // recover with is call by name, lazy evaluate block
-    // the case part is an partial function, and it's call by name. 
+    // the case part is an partial function, and it's call by name.
     // so this function will only be called when using it.
-    attempts.foldLeft(failed)((a, blockFunc) => a recoverWith { case _ => blockFunc() })
+    attempts.foldLeft(failed)((a, blockFunc) =>
+      a recoverWith { case _ => blockFunc() }
+    )
   }
 
   retry(10) {
@@ -132,7 +133,8 @@ object Concurrent extends App {
       anotherExpensiveComputation("resultstr")
     }
   }.onComplete {
-    case Failure(t) => println("retryUsingRecover f1: failed with exception " + t)
+    case Failure(t) =>
+      println("retryUsingRecover f1: failed with exception " + t)
     case Success(v) => println("retryUsingRecover f1: " + v)
   }
 

@@ -10,21 +10,21 @@ object TestTrait extends App {
   }
 
   trait C extends A {
-    // abstract method 
+    // abstract method
     /**
-     * virtual field pattern
-     * @see http://www.oschina.net/question/12_65077
-     * @see http://mail.openjdk.java.net/pipermail/lambda-dev/2012-July/005171.html
-     * Scala's trait is not "real" mixin and not "real" trait
-     * @see http://stackoverflow.com/questions/5241219/how-are-scalas-traits-not-really-traits
-     * A real mixin can access field, but scala trait does not support it(can be acchive by virtual field pattern) 
-     * A key feature of real traits is that methods can be renamed when you import them.
-     * But Scala trait does not support this due to the JVM implementation.
-     */
-    def getValue:Int
+      * virtual field pattern
+      * @see http://www.oschina.net/question/12_65077
+      * @see http://mail.openjdk.java.net/pipermail/lambda-dev/2012-July/005171.html
+      * Scala's trait is not "real" mixin and not "real" trait
+      * @see http://stackoverflow.com/questions/5241219/how-are-scalas-traits-not-really-traits
+      * A real mixin can access field, but scala trait does not support it(can be acchive by virtual field pattern)
+      * A key feature of real traits is that methods can be renamed when you import them.
+      * But Scala trait does not support this due to the JVM implementation.
+      */
+    def getValue: Int
     // call this abstract method to get inner status of a object
-    def printValue = println(getValue) 
-    
+    def printValue = println(getValue)
+
     def m2 = println("m2 from C called")
   }
 
@@ -39,15 +39,15 @@ object TestTrait extends App {
   }
 
   class E(i: Int) extends D(i) {
-    def getValue:Int = i
+    def getValue: Int = i
     def m4 = println("m4 called");
   }
 
   /**
-   *  A trait extends a class
-   *  this only means all classes that mix-in F trait must extend E class.
-   *  @see http://stackoverflow.com/questions/12854941/why-can-a-scala-trait-extend-a-class
-   */
+    *  A trait extends a class
+    *  this only means all classes that mix-in F trait must extend E class.
+    *  @see http://stackoverflow.com/questions/12854941/why-can-a-scala-trait-extend-a-class
+    */
   trait F extends E {}
 
   class G(i: Int) extends E(i) with F {}
@@ -68,10 +68,11 @@ object TestTrait extends App {
   e.m4
   e.printValue
 
-  def callM1(x: H) = x match {
-    case x: C => x.m1
-    case _ => println("No m1 found")
-  }
+  def callM1(x: H) =
+    x match {
+      case x: C => x.m1
+      case _    => println("No m1 found")
+    }
 
   // Mixin when creating object
   val h = new H with C
@@ -93,8 +94,7 @@ object TestTrait extends App {
   i.printValue
 }
 
-
-//TODO: check out how AOP can be achieved by trait 
+//TODO: check out how AOP can be achieved by trait
 //TODO: Have deeper understanding on mixin by reading this http://blog.csdn.net/gzlaiyonghao/article/details/1656969
 //TODO: http://stackoverflow.com/questions/10373318/mixing-in-a-trait-dynamically
 //TODO: Need have a look this (scala self type and what is the difference between self type and trait extend class constraint )

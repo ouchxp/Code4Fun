@@ -16,12 +16,15 @@ object Typeclass extends App {
   trait JsonWriter[A] {
     def write(value: A): Json
   }
-  implicit val stringWriter: JsonWriter[String] = (value: String) => JsString(value)
-  implicit val personWriter: JsonWriter[Person] = (value: Person) => JsObject(Map(
-    "name" -> JsString(value.name),
-    "email" -> JsString(value.email)
-  ))
-
+  implicit val stringWriter: JsonWriter[String] = (value: String) =>
+    JsString(value)
+  implicit val personWriter: JsonWriter[Person] = (value: Person) =>
+    JsObject(
+      Map(
+        "name" -> JsString(value.name),
+        "email" -> JsString(value.email)
+      )
+    )
 
   def toJson[A](value: A)(implicit w: JsonWriter[A]): Json = w.write(value)
 
@@ -30,7 +33,5 @@ object Typeclass extends App {
   println(toJson("123"))
 
   printExpr(toJson(Person("foo", "foo@bar.com")))
-
-
 
 }

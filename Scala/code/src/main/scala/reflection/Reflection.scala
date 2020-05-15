@@ -1,8 +1,5 @@
 package reflection
 
-import scala.language.postfixOps
-
-
 object TestReflection extends App {
   import scala.reflect._
   import scala.reflect.runtime.universe._
@@ -12,7 +9,9 @@ object TestReflection extends App {
   def getGenericTypeTag[T: TypeTag](obj: List[T]) = typeTag[T]
   val tpe = getTypeTag(list).tpe
   tpe.ensuring(_ =:= typeOf[List[Int]]) // Type equal
-  println("The 4th symbol of type " + tpe + " is " + tpe.decls.toList(4)) // 4th symbol is tail method
+  println(
+    "The 4th symbol of type " + tpe + " is " + tpe.decls.toList(4)
+  ) // 4th symbol is tail method
   println(getGenericTypeTag(list))
 
   // Reflection on constructor
@@ -100,7 +99,11 @@ object TestReflection extends App {
     }
   }
 
-  def invoke[T: TypeTag: ClassTag](obj: T, methodName: String, args: Any*): Any = {
+  def invoke[T: TypeTag: ClassTag](
+      obj: T,
+      methodName: String,
+      args: Any*
+  ): Any = {
     val m = runtimeMirror(obj.getClass.getClassLoader)
     val oim = m reflect obj;
     val ms = typeOf[T] decl TermName(methodName) asMethod
@@ -111,7 +114,7 @@ object TestReflection extends App {
   invoke(f, "greet", "hello")
 
   /** Access private var field */
-  println(typeOf[F].decls) 
+  println(typeOf[F].decls)
   val xField = typeOf[F].decl(TermName("x")).asMethod.accessed.asTerm
   val fim = m.reflect(f)
   val xVar = fim.reflectField(xField)
@@ -119,7 +122,7 @@ object TestReflection extends App {
   xVar.set(20)
   f.greet("changed")
   //println(xField)
-  
+
   /** Access private val filed */
   // Able to change value of val field (even val is considered final)
   val yField = typeOf[F].decl(TermName("y")).asTerm

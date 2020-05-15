@@ -1,15 +1,14 @@
-
 /**
- * @see http://stackoverflow.com/questions/16555322/how-can-i-eliminate-this-dot-i-was-testing-implicit-conversion
- */
+  * @see http://stackoverflow.com/questions/16555322/how-can-i-eliminate-this-dot-i-was-testing-implicit-conversion
+  */
 object TestImplicitConvertBoolean extends App {
   // why import these? see the link above
-  import scala.language.{implicitConversions, reflectiveCalls}
 
   case class Bool(b: Boolean) {
-    def ?[X](t: => X) = new {
-      def |(f: => X): X = if (b) t else f
-    }
+    def ?[X](t: => X) =
+      new {
+        def |(f: => X): X = if (b) t else f
+      }
   }
 
   object Bool {
@@ -23,7 +22,6 @@ object TestImplicitConvertBoolean extends App {
 
 object TestImplicitConvertInt extends App {
   // why import these? see the link above
-  import scala.language.{implicitConversions, postfixOps}
 
   class Test(val a: Int) {
     def threeTimes: Int = a * 3
