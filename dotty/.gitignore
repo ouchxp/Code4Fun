@@ -1,3 +1,4 @@
 .dotty-ide*
 target
 .idea
+.bsp
